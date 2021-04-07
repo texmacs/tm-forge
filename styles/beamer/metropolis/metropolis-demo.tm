@@ -1,42 +1,89 @@
 <TeXmacs|1.99.19>
 
-<style|<tuple|metropolis|british>>
+<style|metropolis>
 
 <\body>
+  <\hide-preamble>
+    \;
+  </hide-preamble>
+
   <screens|<\shown>
-    <\title-slide>
-      Metropolis
+    <\slideshow>
+      <\slide>
+        <\title-slide>
+          Metropolis
 
-      <with|font-series|light|A modern Beamer theme (<TeXmacs> clone)>
-    <|title-slide>
-      Mathias Vogelsang
+          <with|font-series|light|A modern <TeXmacs> Beamer theme>
+        <|title-slide>
+          Jeroen Wouters
 
-      January 23, 2017
-    </title-slide|Center for Modern Beamer Themes>
+          April 7, 2021
+        </title-slide|Center for Modern <TeXmacs> Beamer Themes>
+      </slide>
 
-    \;
-  </shown>|<\hidden>
-    <tit|Metropolis>
+      <\slide>
+        <tit|<normal-size|Metropolis>>
 
-    The <name|Metropolis> theme is a Beamer theme with minimal visual noise
-    inspired by the <name|hsrm> Beamer Theme by <name|Benjamin Weiss>.
-  </hidden>|<\hidden>
-    <\section-slide>
-      A section slide
-    </section-slide>
+        The <name|Metropolis> theme is a Beamer theme with minimal visual
+        noise by <name|Matthias Vogelgesang>.
 
-    \;
-  </hidden>|<\hidden>
-    <tit|Todo>
+        Install the theme by copying the <verbatim|metropolis.ts> style file
+        to <verbatim|$TEXMACS_HOME_PATH/styles>.
 
-    <\itemize>
-      <item>Margins
+        You can then select the Metropolis theme in the <TeXmacs> toolbar or
+        via Document<math|\<rightarrow\>>Style.
+      </slide>
 
-      <item>Blocks
+      <\slide>
+        <tit|Features>
 
-      <item>Footer (page number)
-    </itemize>
-  </hidden>>
+        You can
+
+        <\itemize>
+          <item>use <inactive|<hybrid|alert>> to create <alert|alerts!>
+
+          <item>use <inactive|<hybrid|title-slide>> to create a title slide
+
+          <item>use <inactive|<hybrid|section-slide>> to create a section
+          slide
+        </itemize>
+      </slide>
+
+      <\slide>
+        <\section-slide>
+          A section slide
+        </section-slide>
+
+        \;
+      </slide>
+
+      <\slide>
+        <tit|Blocks>
+
+        \;
+
+        <\ornamented-titled>
+          Block content
+        </ornamented-titled|Default>
+
+        <\ornamented-titled>
+          Block content
+        </ornamented-titled|<alert|Alert>>
+
+        <\example*>
+          Block content
+        </example*>
+      </slide>
+
+      <\slide>
+        <tit|Todo>
+
+        <\itemize>
+          <item>Footer (page number)
+        </itemize>
+      </slide>
+    </slideshow>
+  </shown>>
 </body>
 
 <\initial>
@@ -44,7 +91,10 @@
     <associate|font-series|light>
     <associate|page-even-footer|>
     <associate|page-even-header|>
+    <associate|page-medium|paper>
     <associate|page-odd-footer|>
     <associate|page-odd-header|>
+    <associate|page-packet|3>
+    <associate|preamble|false>
   </collection>
 </initial>

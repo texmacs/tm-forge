@@ -6,8 +6,7 @@ Style files and packages
 
 ### List of styles
 
-  * XXXX
-  * YYYY
+  * A simplistic clone of the Beamer Metropolis theme ([dir](./beamer/metropolis))
   * ....
 
 

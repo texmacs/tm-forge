@@ -7,7 +7,7 @@ Miscellaneous materials for TeXmacs
 ### List of materials
 
   * A lorem-ipsum generator ([dir](./lorem-ipsum))
-  * A tetris game with TeXmacs tables ([dir](./tetris)
+  * A tetris game with TeXmacs tables ([dir](./tetris))
   * ....
 
 

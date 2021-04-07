@@ -20,15 +20,43 @@
     </src-license>
   </src-title>>
 
-  <use-package|beamer|fira-font>
+  <use-package|fira-font|beamer>
 
   <apply-theme|dark-vador>
+
+  <assign|page-even|20mm>
+
+  <assign|page-odd|20mm>
+
+  <assign|page-right|20mm>
 
   <assign|font-base-size|14>
 
   <assign|font-series|light>
 
   <assign|title-color|white>
+
+  <assign|ornament-colored-background|true>
+
+  <assign|ornament-color|<if|<value|ornament-colored-background>|#e4e7e7|white>>
+
+  <assign|ornament-border|0ln>
+
+  <assign|ornament-shadow-color|white>
+
+  <assign|example-color|#14b03d>
+
+  <assign|example*|<macro|body|<compound|ornamented-titled|<arg|body>|<with|color|<value|example-color>|Example>>>>
+
+  <assign|ornament-sunny-color|white>
+
+  <assign|ornament-extra-color|<if|<value|ornament-colored-background>|#cfd3d4|white>>
+
+  <assign|ornament-title-color|black>
+
+  <assign|ornament-render-title|<macro|body|<with|color|<value|ornament-title-color>|font-series|medium|<arg|body>>>>
+
+  <assign|decorated-hook|<macro|body|<with|bg-color|<value|ornament-extra-color>|old-color|<value|color>|old-math-color|<value|math-color>|old-strong-color|<value|strong-color>|<with|ornament-extra-color|<value|bg-color>|color|<value|old-color>|math-color|<value|old-math-color>|strong-color|<value|old-strong-color>|<with|bg-color|<value|ornament-color>|<ornament-render-body|<with|ornament-color|<value|bg-color>|<arg|body>>>>>>>>
 
   <assign|title-bar-color|#23373b>
 
@@ -42,7 +70,7 @@
     </wide-tabular>
   </macro>>
 
-  <assign|small-caps|<false>>
+  <assign|small-caps|false>
 
   <assign|section-slide|<\macro|title>
     <\wide-tabular>
@@ -52,13 +80,17 @@
     </wide-tabular>
   </macro>>
 
+  <assign|title-font-size|1>
+
+  <assign|title-vpadding|0.75em>
+
   <assign|tit|<\macro|body>
     <\no-margins>
-      <\surround|<assign|page-this-top|0mm>|<assign|gpag-length|<macro|<minus|1pag|<plus|<times|2|<value|title-vpadding>>|<times|<value|title-font-size>|1.5fn>|0.8fn|<value|par-par-sep>>>>>>
-        <with|par-par-sep|0fn|color|<value|title-shadow-color>|font-size|<if|<value|title-old-style>|1|<value|title-font-size>>|<resize|<tabular*|<tformat|<twith|table-width|1par>|<twith|table-hmode|exact>|<cwith|1|1|1|-1|cell-tsep|<value|title-vpadding>>|<cwith|1|1|1|-1|cell-bsep|<value|title-vpadding>>|<cwith|1|1|1|-1|cell-background|<title-bar-color>>|<cwith|1|1|1|1|cell-halign|l>|<cwith|1|1|1|1|cell-hyphen|t>|<twith|table-valign|T>|<cwith|1|1|1|1|cell-bborder|<value|title-border>>|<table|<row|<\cell>
-          <with-tit-color|<if|<equal|<value|small-caps>|<true>>|<with|font-shape|small-caps|<arg|body>>|<arg|body>>>
-        </cell>>>>>||<plus|1b|0.2fn>||>>
-      </surround>
+      <style-with|src-compact|none|<\surround|<assign|page-this-top|0mm>|<assign|gpag-length|<macro|<minus|1pag|<plus|<times|2|<value|title-vpadding>>|<times|<value|title-font-size>|1.5fn>|0.8fn|<value|par-par-sep>>>>>>
+        <style-with|src-compact|none|<with|par-par-sep|0fn|color|<value|title-shadow-color>|font-size|<if|<value|title-old-style>|1|<value|title-font-size>>|<style-with|src-compact|none|<resize|<tabular*|<tformat|<twith|table-width|1par>|<twith|table-hmode|exact>|<cwith|1|1|1|-1|cell-tsep|<value|title-vpadding>>|<cwith|1|1|1|-1|cell-bsep|<value|title-vpadding>>|<cwith|1|1|1|-1|cell-background|<title-bar-color>>|<cwith|1|1|1|1|cell-halign|l>|<cwith|1|1|1|1|cell-hyphen|t>|<twith|table-valign|T>|<cwith|1|1|1|1|cell-bborder|<value|title-border>>|<cwith|1|1|1|1|cell-lsep|0.75em>|<table|<row|<\cell>
+          <with-tit-color|<with|font-series|medium|<if|<value|small-caps>|<with|font-shape|small-caps|<arg|body>>|<arg|body>>>>
+        </cell>>>>>||<plus|1b|0.2fn>||>>>>
+      </surround>>
     </no-margins>
   </macro>>
 </body>

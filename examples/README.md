@@ -6,7 +6,7 @@ Example documents
 
 List of documents
 
-  * XXXX
+  * A large free-style mathematical composition ([tm](./math-diagram-frontisi.tm)) ([pdf](./math-diagram-frontisi.pdf))
   * YYYY
   * ....
 

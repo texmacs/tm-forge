@@ -8,7 +8,7 @@ Miscellaneous materials for TeXmacs
 
   * A lorem-ipsum generator ([dir](./lorem-ipsum))
   * A tetris game with TeXmacs tables ([dir](./tetris))
-  * ....
+  * A document to easily find your TEXMACS_HOME_PATH and TEXMACS_PATH ([file](./find-your-texmacs-paths.tm))
 
 
 

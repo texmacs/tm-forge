@@ -23,7 +23,9 @@
 
   <\itemize>
     <item><verbatim|TEXMACS_HOME_PATH> is the directory where you can put
-    additional style files and plugins.
+    additional style files (in the subdirectory <verbatim|styles>), packages
+    (in the subdirectory <verbatim|packages>) and plugins (in the
+    subdirectory <verbatim|plugins>). Consult the Help menu for more details.
 
     <item><verbatim|TEXMACS_PATH> is the directory where the system files for
     <TeXmacs> are stored. These usually do not need to be altered.

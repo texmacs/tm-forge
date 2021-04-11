@@ -1,36 +1,97 @@
 <TeXmacs|1.99.19>
 
-<style|cv-altmejd>
+<style|<tuple|generic|british|reduced-margins>>
 
 <\body>
   <\hide-preamble>
+    <\style-only*>
+      <\wide-tabular>
+        <tformat|<cwith|1|1|1|1|cell-lsep|1em>|<cwith|1|1|1|1|cell-rsep|1em>|<cwith|1|1|1|1|cell-bsep|1em>|<cwith|1|1|1|1|cell-tsep|1em>|<cwith|1|1|1|1|cell-background|#f0f0f0>|<cwith|1|1|1|1|cell-tborder|0.5ln>|<cwith|1|1|1|1|cell-bborder|0.5ln>|<cwith|1|1|1|1|cell-lborder|0.5ln>|<cwith|1|1|1|1|cell-rborder|0.5ln>|<table|<row|<\cell>
+          <with|font-series|bold|CV template -- Altmejd > (ver 0.5)
+
+          This \ document is based on the cv
+          <slink|https://github.com/adamaltmejd/cv> of <compound|nbsp>Adam
+          Altmejd. The original code is distributed under the MIT license and
+          the content of the CV is property of Adam Altmejd.
+
+          Reimplemented in <TeXmacs> by M. Gubinelli.
+
+          <\small>
+            Custom tags:
+
+            <\itemize>
+              <item><tt|cv-section> \ : start a new section of the CV
+
+              <item><tt|timeline> : add a timeline information at the current
+              line
+            </itemize>
+          </small>
+        </cell>>>>
+      </wide-tabular>
+    </style-only*>
+
+    \;
+
+    <assign|font|sansserif=Gill Sans,Palatino>
+
+    <assign|timeline-hsep|<macro|6fn>>
+
+    <assign|timeline-vsep|<macro|0.1fn>>
+
+    <assign|par-left|<timeline-hsep>>
+
+    <assign|aligned-timeline|<macro|name|<style-with|src-compact|none|<vspace*|<timeline-vsep>><with|par-first|<minus|<timeline-hsep>>|<yes-indent>><resize|<arg|name>|<minus|1r|<minus|<timeline-hsep>|0.5fn>>||<plus|1r|0.5fn>|>>>>
+
+    <assign|timeline|<macro|text|<with|font-family|ss|font-series|regular|font-size|0.75|<aligned-timeline|<arg|text>>>>>
+
+    <assign|cv-section-title|<macro|title|<timeline|<tabular|<tformat|<cwith|1|-1|1|-1|cell-width|<timeline-hsep>>|<cwith|1|-1|1|-1|cell-hmode|exact>|<cwith|1|1|1|1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-bborder|5ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|1|1|cell-rborder|0ln>|<cwith|2|2|1|1|cell-height|0.2em>|<cwith|2|2|1|1|cell-vmode|exact>|<cwith|1|1|1|1|cell-height|0.4em>|<cwith|1|1|1|1|cell-vmode|exact>|<table|<row|<cell|>>|<row|<cell|>>>>>><large|<with|font-family|ss|font-series|light|<arg|title>>>>>
+
+    <assign|render-cv-section|<\macro|body>
+      <\padded-normal|<timeline-vsep>|<timeline-vsep>>
+        <\indent-left|<timeline-hsep>>
+          <surround|<no-page-break*>|<no-indent*>|<arg|body>>
+        </indent-left>
+      </padded-normal>
+    </macro>>
+
+    <assign|cv-section|<\macro|title>
+      <vspace*|1fn><cv-section-title|<arg|title>>
+    </macro>>
+
+    \;
+
+    \ <assign|tmhtml-timeline|<macro|text|<html-class|tmweb-cv-timeline|<arg|text>>>>
+
+    \ <assign|tmhtml-cv-section|<macro|title|<html-class|tmweb-cv-section|<arg|title>>>>
+
     \;
   </hide-preamble>
-
-  \;
 
   <\with|par-left|0>
     <\wide-tabular>
       <tformat|<cwith|1|1|1|1|cell-halign|c>|<cwith|1|1|2|2|cell-halign|r>|<cwith|1|1|3|3|cell-halign|r>|<cwith|1|1|1|1|cell-hpart|2>|<cwith|1|1|1|-1|cell-valign|c>|<table|<row|<\cell>
-        <\cv-title>
-          Adam Altmejd
-        </cv-title>
+        <\with|font-size|2.5|font|Avenir Next|font-shape|condensed|par-mode|center>
+          <\with|par-sep|0.0fn>
+            <with|font-series|bold|Adam Altmejd><next-line><with|font-size|2|par-par-sep|0.3fn|par-sep|0.4fn|Curriculum
+            Vitæ>
+          </with>
+        </with>
       </cell>|<\cell>
-        <\cv-address>
+        <\with|par-mode|right|font-family|ss|font-size|0.8>
           Department of Finance<next-line>Stockholm School of
           Economics<next-line>P.O. Box 6501<next-line>113 83
           Stockholm<next-line>Sweden
-        </cv-address>
+        </with>
       </cell>|<\cell>
-        <\with|font|Avenir Next|par-mode|right|font-family|ss|font-size|0.8>
-          <cv-phone|+46 (0) 734 20 01 20><next-line><cv-mail|adam@altmejd.se><next-line><cv-webpage|adamaltmejd.se><next-line><cv-twitter|@adamaltmejd><next-line><cv-linkedin|adamaltmejd>
+        <\with|par-mode|right|font-family|ss|font-size|0.8>
+          +46 (0) 734 20 01 20<next-line>adam@altmejd.se<next-line>adamaltmejd.se<next-line>@adamaltmejd<next-line>adamaltmejd
         </with>
       </cell>>>>
     </wide-tabular>
   </with>
 
   <\cv-section>
-    Academic Position
+    <very-large|Academic Position>
   </cv-section>
 
   <timeline|2019\U><with|font-series|bold|Wallander Postdoctoral Fellow,>
@@ -40,14 +101,14 @@
   Institute for Social Research, Stockholm University
 
   <\cv-section>
-    Research Visits
+    <very-large|Research Visits>
   </cv-section>
 
   <timeline|2016\U2017>Department of Economics, Harvard University, Faculty
   Sponsor: Prof. David Laibson
 
   <\cv-section>
-    Education
+    <very-large|Education>
   </cv-section>
 
   <timeline|2013\U2018><with|font-series|bold|Ph.D. in Economics,> Stockholm
@@ -116,22 +177,22 @@
     References
   </cv-section>
 
-  <cv-subsection|Professor Tore Ellingsen>Primary Supervisor \<bullet\>
-  tore.ellingsen@hhs.se \<bullet\> +46 8 736 92 60
+  <with|font-family|ss|font-series|light|Professor Tore
+  Ellingsen><next-line>Primary Supervisor \<bullet\> tore.ellingsen@hhs.se
+  \<bullet\> +46 8 736 92 60
 
-  <cv-subsection|Professor Magnus Johannesson>Secondary Supervisor \<bullet\>
-  magnus.johannesson@hhs.se \<bullet\> +46 8 736 94 43
-
-  <cv-subsection|Professor Katrine V. Løken>Dissertation Opponent \<bullet\>
+  Professor Magnus Johannesson<next-line>Secondary Supervisor \<bullet\>
+  magnus.johannesson@hhs.se \<bullet\> +46 8 736 94 43<next-line>Professor
+  Katrine V. Løken<next-line>Dissertation Opponent \<bullet\>
   katrine.loken@nhh.no \<bullet\> +47 41 66 15 91\ 
 
-  <cv-subsection|Professor Colin F. Camerer>Co-author \<bullet\>
+  Professor Colin F. Camerer<next-line>Co-author \<bullet\>
   camerer@hss.caltech.edu \<bullet\> +1 (626) 395-4054\ 
 
-  <cv-subsection|Assistant Professor Christopher A. Neilson> Co-author
-  \<bullet\> cneilson@princeton.edu\ 
+  Assistant Professor Christopher A. Neilson Co-author \<bullet\>
+  cneilson@princeton.edu\ 
 
-  <cv-subsection|Professor Carina Mood>PI \<bullet\> carina.mood@sofi.su.se
+  Professor Carina Mood<next-line>PI \<bullet\> carina.mood@sofi.su.se
   \<bullet\> +46 8 16 25 86
 
   <\cv-section>
@@ -203,12 +264,30 @@
   Journal of Economics, Jour- nal of Public Economics
 
   \;
+
+  \;
+
+  \;
+
+  \;
 </body>
 
 <\initial>
   <\collection>
+    <associate|font|Palatino>
     <associate|font-base-size|10>
-    <associate|global-author|Massimiliano Gubinelli>
-    <associate|global-title|cv-altmejd-with-style-file.tm>
+    <associate|font-family|rm>
+    <associate|math-font|math-termes>
+    <associate|page-bot|1.5cm>
+    <associate|page-even|1.5cm>
+    <associate|page-medium|paper>
+    <associate|page-odd|1.5cm>
+    <associate|page-right|1.5cm>
+    <associate|page-screen-margin|false>
+    <associate|page-top|1.5cm>
+    <associate|par-columns|1>
+    <associate|par-par-sep|0.4fn>
+    <associate|par-sep|0.4fn>
+    <associate|src-compact|inline args>
   </collection>
 </initial>

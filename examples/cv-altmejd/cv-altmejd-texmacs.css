@@ -1,0 +1,685 @@
+
+/******************************************************************************
+* MODULE     : cv-altmejd-texmacs.css
+* DESCRIPTION: CSS style sheet for the TeXmacs style cv-altmejd
+* COPYRIGHT  : (C) 2021  Massimiliano Gubinelli
+*******************************************************************************
+* This software falls under the GNU general public license version 3 or later.
+* It comes WITHOUT ANY WARRANTY WHATSOEVER. For details, see the file LICENSE
+* in the root directory or <http://www.gnu.org/licenses/gpl-3.0.html>.
+******************************************************************************/
+
+/******************************************************************************
+* Font setup
+******************************************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Lora:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+
+
+/******************************************************************************
+* Main text properties
+******************************************************************************/
+
+html {
+    background-color: #AAAAAA;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Lora,Georgia,Times New Roman,Times,serif;
+    font-size: .95rem;
+    font-weight: 400;
+    text-align: justify;
+    border: 0px;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    max-width: 700px;
+    width: 70%; 
+}
+
+.tmdoc-body {
+    padding: 0px;
+    margin: 0px 5em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h4, h5, h6 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+p, center {
+    margin: 0px;
+    margin-left: 85px;
+    padding: 0px;
+    padding-bottom: 0.35em;
+    padding-top: 0.35em;
+}
+
+ul, ol, dl, di {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+}
+
+ul > p, ol > p, dl > p, di > p {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody p {
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+    padding: 0.2em;
+    vertical-align: baseline;
+}
+
+a:link, a:visited {
+    color: #805020;
+    text-decoration: none;
+}
+
+a:active, a:focus, a:hover {
+    color: #D0343F;
+    text-decoration: underline;
+}
+
+.tmweb-obsolete, .tmweb-copyright {
+    display: none;
+}
+
+
+/******************************************************************************
+* Headers
+******************************************************************************/
+
+.notes-header img {
+    vertical-align: middle;
+}
+
+.notes-header-name {
+    float: right;
+}
+
+.notes-abstract {
+    font-size: 80%;
+    font-style: italic;
+}
+
+
+.tmweb-pad-below {
+    padding-bottom: 20px;
+}
+
+.tmweb-header {
+    margin: 0px -5em;
+
+    background-color: white;
+    background-image: url("../images/sigma-224.svg"),
+                      url("../images/uniform-224.png");
+    background-position: bottom, top;
+    background-repeat: repeat-x, repeat;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.tmweb-header a:link, .tmweb-header a:visited {
+    color: #555;
+}
+
+.tmweb-header a:active, .tmweb-header a:focus, .tmweb-header a:hover {
+    color: #D0343F;
+    text-decoration: underline;
+}
+
+.tmweb-title-image {
+    width: 60px;
+    height: 60px;
+    vertical-align: -27px;
+    padding: 10px 10px;
+}
+
+.tmweb-title {
+    height: 60px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.tmweb-top-menu {
+    height: 60px;
+    padding-top: 30px;
+    float: right;
+}
+
+.tmweb-top-menu a {
+    background-image: none;
+    border-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .tmweb-title-image {
+        width: 50px;
+        height: 50px;
+        vertical-align: -23px;
+        padding: 8px 8px;
+    }
+
+    .tmweb-title {
+        height: 50px;
+    }
+
+    .tmweb-top-menu {
+        height: 50px;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .tmweb-header {
+        margin: 0px -2em;
+        padding: initial;
+        padding-top: 5px;
+        padding-bottom: 40px;
+    }
+
+    .tmweb-title-image {
+        width: 40px;
+        height: 40px;
+        vertical-align: -18px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 2em;
+        padding-right: 0em;
+    }
+
+    .tmweb-title {
+        height: 40px;
+    }
+    
+    .tmweb-top-menu {
+        height: initial;
+        float: initial;
+        position: relative;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+    
+    .tmweb-top-menu a {
+        border-color: silver;
+        border-style: solid none none none;
+        border-width: thin;
+        color: #555;
+        display: block;
+        padding: 5px 2em;
+        text-align: left;
+    }
+}
+
+/******************************************************************************
+* Footers
+******************************************************************************/
+
+.tmweb-pad-above {
+    padding-top: 20px;
+}
+
+.tmweb-footer {
+    margin: 0px -5em;
+
+    background-color: white;
+    background-image: url("../images/sigma-224-rev.svg"),
+                      url("../images/uniform-224.png");
+    background-position: top, bottom;
+    background-repeat: repeat-x, repeat;
+
+    color: #555;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.tmweb-footer a:link, .tmweb-footer a:visited {
+    color: #777;
+}
+
+.tmweb-footer a:active, .tmweb-footer a:focus, .tmweb-footer a:hover {
+    color: #D0343F;
+    text-decoration: underline;
+}
+
+.tmweb-footer h1, .tmweb-footer h2, .tmweb-footer h3 {
+    margin-top: 0em;
+}
+
+.tmweb-footer .tmweb-license, .tmweb-footer section {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tmweb-footer .tmweb-license {
+    text-align: justify;
+    width: 470px;
+    margin-left: 1em;
+    margin-right: 3em;
+}
+
+.tmweb-footer nav a {
+    display: block;
+    text-align: left;
+}
+
+.tmweb-footer nav .tmweb-obsolete {
+    display: none;
+}
+
+@media screen and (max-width: 1339px) {
+    .tmweb-footer .tmweb-license {
+        width: 350px;
+        margin-top: -0.5em;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .tmweb-footer .tmweb-license {
+        width: initial;
+        display: block;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+
+    .tmweb-footer .tmweb-license, .tmweb-footer section {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .tmweb-footer {
+        margin: 0px -2em;
+    }
+
+    .tmweb-footer .tmweb-license, .tmweb-footer section {
+        font-size: 12px;
+    }
+}
+
+/******************************************************************************
+* Figures with captions
+******************************************************************************/
+
+.tmweb-caption-below {
+    display: block;
+    text-align: center;
+}
+
+.tmweb-caption-below .tmweb-figure {
+    display: block;
+    text-align: center;
+}
+
+.tmweb-caption-below .tmweb-caption {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -1.5em;
+    margin-bottom: -1.5em;
+
+    background-color: #905465; /* #D03445; */
+    border-radius: 0.4em;
+    border-color: transparent;
+    border-style: solid;
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    text-shadow: 0.1em 0.1em 0px #604C4C; /* #A02C2C; */
+    box-shadow: 0.1em 0.1em #604C4C; /* #A02C2C; */
+}
+
+/******************************************************************************
+* Horizontal versus vertical splits
+******************************************************************************/
+
+.tmweb-split-car img {
+    min-width: 60vw;
+    max-width: 80vw;
+}
+
+.tmweb-split-car {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1600px) {
+    .tmweb-split {
+        display: block;
+        width: 100%;
+        min-height: 58vh;
+        margin-top: 4vw;
+    }
+
+    .tmweb-split-car {
+        display: inline-block;
+        width: 55%;
+        vertical-align: middle;
+        margin-top: -5vh;
+        margin-left: -2.5em;
+        margin-right: 2.5em;
+    }
+
+    .tmweb-split-car img {
+        min-width: 40vw;
+    }
+
+    .tmweb-split-cdr {
+        display: inline-block;
+        width: 44%;
+        vertical-align: middle;
+        margin-top: -5vh;
+    }
+}
+
+/******************************************************************************
+* Galleries
+******************************************************************************/
+
+.tmweb-hlist {
+    text-align: left;
+}
+
+.tmweb-hlist div {
+    display: inline;
+}
+
+.tmweb-hlist .tmweb-caption-below {
+    display: inline-block;
+    width: 48%;
+}
+
+.tmweb-hlist .tmweb-caption-below .tmweb-figure {
+    display: inline-block;
+}
+
+.tmweb-hlist .tmweb-caption-below .tmweb-caption {
+    display: inline-block;
+}
+    
+.tmweb-gallery img {
+    display: inline;
+    width: 95%;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .tmweb-hlist .tmweb-caption-below {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .tmweb-hlist .tmweb-caption-below {
+        width: 30%;
+    }
+}
+
+/******************************************************************************
+* Video galleries
+******************************************************************************/
+
+.tmweb-hlist .tmweb-thumbnail {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    max-width: 320px;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+.tmweb-thumbnail-image {
+    transition: transform .2s; /* Animation */
+}
+
+.tmweb-thumbnail-image:hover {
+    transform: scale(1.2);
+}
+
+.tmweb-hlist .tmweb-thumbnail .tmweb-thumbnail-legend {
+    font-size: 0.8em;
+}
+
+.tmweb-hlist .tmweb-youtube {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.tmweb-youtube .tmweb-youtube-video {
+    width: 72vw;
+    height: 45vw;
+    max-width: 1200px;
+    max-height: 750px;
+}
+
+.tmweb-youtube .tmweb-youtube-legend {
+    font-size: 1em;
+}
+
+/******************************************************************************
+* Miscellaneous elements
+******************************************************************************/
+
+.tmweb-item-pic img {
+    width: 2.5em;
+    vertical-align: top;
+}
+
+/******************************************************************************
+* Special markup
+******************************************************************************/
+
+.subsup {
+    display: inline;
+    vertical-align: -0.2em;
+}
+
+.subsup td {
+    padding: 0px;
+    text-align: left;
+}
+
+.fraction {
+    display: inline;
+    vertical-align: -0.8em;
+}
+
+.fraction td {
+    padding: 0px;
+    text-align: center;
+}
+
+.wide {
+    position: relative;
+    margin-left: -0.4em;
+}
+
+.accent {
+    position: relative;
+    margin-left: -0.4em;
+    top: -0.1em;
+}
+
+.compact-block p, .compact-block center {
+    margin: 0px;
+    padding: 0px;
+}
+
+.left-tab {
+    text-align: left;
+}
+
+.center-tab {
+    text-align: center;
+}
+
+.right-tab {
+    text-align: right;
+    margin-top: -1.2em;
+}
+
+tt, .verbatim {
+    font-family: 'Liberation Mono', monospace;
+    font-size: 80%;
+}
+
+/******************************************************************************
+* Further hacks
+******************************************************************************/
+code {
+    font-size: 80%;
+    font-family: 'Liberation Mono', monospace;
+}
+
+.tmweb-code {
+    font-size: 90%;
+    background-color: #E0E0FF;
+    border-width: 1px;
+    border-color: #4040C0;
+    border-style: solid;
+    padding: 0.3em 0.6em;
+    margin: 0.5em 0em;
+}
+
+.tmweb-code p, .tmweb-code pre {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tmweb-key {
+    font-size: 84%;
+    background-color: #E0D0C0;
+    box-shadow: 0.1em 0.1em #506080;
+    padding: 0.05em 0.1em;
+    margin: 0em 0.05em;
+    min-width: 0.6em;
+}
+
+.tmweb-menu {
+    font-size: 92%;
+}
+
+.tmweb-markup {
+    color: blue;
+    font-family: 'Linux Biolinum', sans-serif;
+}
+
+
+.tmweb-entry-date {
+    font-size: 70%;
+    float: right;
+    font-style: italic;
+}
+
+.tmweb-entry-abstract {
+    font-size: 50%;
+    color: darkslategrey;
+    padding-left:  5em;
+    display: block;
+    padding-bottom: 1em;
+}
+
+
+/******************************************************************************
+* CV specific
+******************************************************************************/
+
+.tmweb-cv-section {
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.425rem;
+    font-weight: 300;
+}
+
+.tmweb-cv-subsection {
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-left: 85px;
+}
+
+.tmweb-cv-section p:before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px!important;
+    margin-inline-start: -95px;
+    width: 80px;
+    height: 5px;
+    background-color: #212529;
+    background-position: 0 100%;
+    }
+    
+.tmweb-cv-timeline {
+    float: left;
+    width: 85px;
+    margin-right: 8px!important;
+    margin-inline-start: -95px;
+    text-align: right;
+    font-size: .83125rem;
+    font-family: Open Sans, Helvetica Neue, Helvetica Arial, sans-serif;
+} 
+    

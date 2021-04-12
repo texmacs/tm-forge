@@ -8,8 +8,6 @@ The content of the CV is property of Kieran Healy.
 
 Icons from [Fontawesome 5](https://fontawesome.com) (CC BY 4.0).
 
-Adapted for TeXmacs by M. Gubinelli. (CC BY 4.0).
-
 An example [PDF output](./kjh-vita.pdf) and the obligatory screenshot ![screenshot](./screenshot.png).
 
 ## Remarks

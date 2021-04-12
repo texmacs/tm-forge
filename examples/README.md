@@ -11,6 +11,6 @@ Example documents
   * A couple mechanics papers written using TeXmacs ([dir](./papers-audoly/))
   * A template for a resume ([dir](./resume-template/))
   * Anoter template for a CV ([dir](./cv-altmejd/))
-  * And anoter ([dir](./hjk-vita/))
+  * And anoter ([dir](./kjh-vita/))
 
 

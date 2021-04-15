@@ -11,6 +11,13 @@ Example documents
   * A couple mechanics papers written using TeXmacs ([dir](./papers-audoly/))
   * A template for a resume ([dir](./resume-template/))
   * Anoter template for a CV ([dir](./cv-altmejd/))
-  * And anoter ([dir](./kjh-vita/))
+  * And another ([dir](./kjh-vita/))
+  * Slides for a talk ([dir](./slides-gubinelli-eth)) ([pdf](./slides-gubinelli-eth/talk-eth-2020.pdf)) ([screenshot](./slides-gubinelli-eth/screenshot.png))
+  * Slides for a talk on TeXmacs & Guile in Strasbourg in 2019 ([dir](./talk-texmacs-guile)) ([pdf](./talk-texmacs-guile/talk-texmacs-guile-strasbourg-june-2019.pdf)) ([screenshot](./talk-texmacs-guile/screenshot.png))
+
+
+  
+
+
 
 

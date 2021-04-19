@@ -16,13 +16,16 @@ My commenting tools were developped before the official Comment package became a
 
 ## How it works
 This Komment package provides a new "komment" tag for highlighting text chunks one whishes to change and/or comment, together with appropriate commands for introducing and editing that tag. Komments by multiple authors can co-exist and can be given a different highlighting color. Komments are also time-stamped.
+
 ![screenshot1](./balloon_display.png "changes proposed by two co-authors") 
 
 A komment tag can appear as
  - a pop-up balloon when the cursor enters the highlighted region
  - static inline greyed text (e.g. for printing or pdf export)
  - hidden, i.e. showing only the highlighting, for unencumbered editing.
+ 
 ![inline](./inline_display.png  "inline display")
+
 Within this highlighting markup, proposed text modifications are shown as "version-both" tags (with the comment field possibly empty).
 
 At the time of reviewing comments, TeXmac's Versioning tools are used for navigating between komments,
@@ -38,6 +41,7 @@ Below I explain what these do, but they can be defined differently, of course.
 Select some text beforehand and press Ctl-m. This brings up a text editing widget where you can enter the text of the komment. 
 It can be as complicated as you want, contain equations...
 At the bottom of the widget, you can change the name of the komment author, and associate a color to that name.
+
 ![widget](./widget.png  "comment input widget")
 
 #### Modifying a komment : Ctl-m

@@ -1,4 +1,4 @@
-## Tools for handling proposed text changes in collaborative editing
+## Tools for handling proposed text changes in (offline) collaborative editing
 
 When working on a draft document as a co-author, one often needs to propose changes to the text, were it for a mere typo,
 for clarification purposes, etc. And in some cases you want to justify the proposed change by attaching a comment to it.

@@ -15,7 +15,7 @@ change inside such a comment, it is then painful and error-prone to manually imp
 My commenting tools were developped before the official Comment package became available (and hence it does not make use of it). I have renamed my stuff to Komment, in order to avoid any confusion.
 
 ## How it works
-This Komment package provides new "komment" tags for highlighting text chunks that call for a comment and/or a change in the text, together with appropriate commands for introducing and editing them. Komments by multiple authors can co-exist and can be given a different highlighting color. Komments are also time-stamped.
+This Komment package provides a new "komment" tag for highlighting text chunks one whishes to change and/or comment, together with appropriate commands for introducing and editing that tag. Komments by multiple authors can co-exist and can be given a different highlighting color. Komments are also time-stamped.
 ![screenshot1](./balloon_display.png "changes proposed by two co-authors") 
 
 A komment tag can appear as
@@ -31,7 +31,7 @@ displaying old or new version of text, and finally, accepting or rejecting propo
 The package uses a style file, scheme macros and widgets. Hopefully it illustrates many aspecs of coding in TeXmacs, including e.g. overloading of existing scheme functions.
 
 ## Usage
-For a streamlined use, keyboard shortcuts are defined in my-init-texmacs.scm (I made no menu, although it would be possible).
+For a streamlined use, keyboard shortcuts are defined in `my-init-texmacs.scm` (I made no menu, we mostly re-use the Versioning menu).
 Below I explain what these do, but they can be defined differently, of course.
 
 #### introducing a komment : Ctl-m 
@@ -42,7 +42,7 @@ At the bottom of the widget, you can change the name of the komment author, and 
 
 #### Modifying a komment : Ctl-m
 You can re-edit an existing komment by placing the cursor in it and pressing again  Ctl-m. 
-Be careful close the widget (pressing OK) when you are done, or you could loose track of which widgets corresponds to which comment and your changes could get lost.
+Be careful to close the widget (pressing OK) when you are done, or you could loose track of which widgets corresponds to which comment and your changes could get lost.
 
 #### Proposing a text change : Ctl-M (think "Modify")
  Select some text beforehand and press Ctl-M. This will automatically introduce a "version-both tag" inside a komment.
@@ -50,9 +50,9 @@ Be careful close the widget (pressing OK) when you are done, or you could loose 
  initially set to `×` (i.e. a `<version-suppressed>` tag, meaning it is a pure deletion with no replacement text).
  Conversely, Ctl-M with no initial selection is a pure text addition.
   
-At that point the "comment" justifying the change is empty; it can be added afterwards if needed, with Ctl-m.
+At that point the "comment" that could justify the change is empty; it can be added afterwards if needed, with Ctl-m.
 
-#### Circulating between different display styles of the komment field : Ctl-/
+#### Circulating between different display styles of the comment field : Ctl-/
 When using this keyboard shortcut, the resulting display style is shown in the bottom message bar.
 
 #### Toggle considering komment tags as a version tag.
@@ -92,5 +92,5 @@ Add (merge with prexisting) the `package` and `progs` folders to your ~/.TeXmacs
 As said above, this package is hacked onto existing features. This means for instance that the komment
 tag appears as a variant of the version-* tags, which is nonsense (but not overly annoying).
  
-Also this code is clearly not polished, final product, and it may not fulfill your neesd or expectations. There are some display quirks, for instance when a comment is inserted in the caption of
+Also this code is clearly not a polished, final product, and it may not fulfill your needs or expectations. There are some display quirks, for instance when a comment is inserted in the caption of
 a big figure (making it hard to read and edit). This could probably be improved.

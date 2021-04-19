@@ -75,8 +75,9 @@ I re-use the shortcuts of the Version tool menu, made more generally available.
 If a komment contains no version tag, Ctl-1 and Ctl-2 both clear the komment.
 
 ### Installation
-Add (merge with prexisting) the `package` and `progs` folders to your ~/.TeXmacs user folder. Then add the definition of the keybord shortcuts to your `my-init-texmacs.scm` (inside the progs folder) 
+Add (merge with prexisting) the `package` and `progs` folders to your ~/.TeXmacs user folder. Then load the scm module and add the definition of the keybord shortcuts to your `my-init-texmacs.scm` (inside the progs folder) 
 ```
+(use-modules (komments))
 (kbd-map 
   ("C-m" (make-komment))
   ("C-M" (make-correction))

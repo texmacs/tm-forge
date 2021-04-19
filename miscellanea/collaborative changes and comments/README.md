@@ -1,15 +1,16 @@
-## Tools for proposing text changes in collaborative editing
+## Tools for handling proposed text changes in collaborative editing
 
 When working on a draft document as a co-author, one often needs to propose changes to the text, were it for a mere typo,
-for clarification purposes, etc. And in many cases you would want to justify the proposed change by attaching a comment to it.
-Furthermore, when changes are poposed, the process of reviewing them and accepting or rejecting them should be eased through simple keystrokes.
+for clarification purposes, etc. And in some cases you want to justify the proposed change by attaching a comment to it.
+Furthermore, after changes are poposed, the process of reviewing them and accepting or rejecting them should be straightforward.
 
-In TeXmacs, the Versioning Tool already provides an easy mechanism to revise changes made to
-a document and easily accept or reject them. However it lacks the accompanying comments. And
+In TeXmacs, the Versioning Tool already provides an easy mechanism to mark changes made to
+a document and to revise them, accepting or rejecting them. However it lacks the notion of comments accompanying changes
+(it primarily searches differences between _files_ and any added comment would appear as an addition to the text). And
 conversely, the recently added Comment package allows making comments, but if one proposes a
-change inside such a comment, it is then very painful to manually implement it. We need the two features combined. 
+change inside such a comment, it is then painful and error-prone to manually implement it. We need the two features combined. 
 
-**This package tries to fill this gap by hacking commenting tools working hand in hand with the versioning Tool**.
+**This package tries to fill this gap by hacking commenting tools that work hand in hand with the Versioning Tools**.
 
 My commenting tools were developped before the official Comment package became available (and hence it does not make use of it). I have renamed my stuff to Komment, in order to avoid any confusion.
 

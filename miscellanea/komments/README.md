@@ -63,19 +63,19 @@ Only useful when a text contains both “normal” version tags and komments tag
 
 #### Navigating between komments, control their display, accept or reject changes.
 
-I re-use the shortcuts of the Version tool menu, made more generally available.
-Ctl-up jump to previous komment
-Ctl-down jump to next komment
-Ctl-left display old text only
-Ctl-right display proposed new text only
-Ctl-| display both old and new text
-Ctl-1 retain old text and delete komment (accept proposed change)
-Ctl-2 retain new text and delete komment (reject proposed change)
+I re-use the shortcuts of the Version tool menu, made more generally available.  
+Ctl-up jump to previous komment  
+Ctl-down jump to next komment  
+Ctl-left display old text only  
+Ctl-right display proposed new text only  
+Ctl-| display both old and new text  
+Ctl-1 retain old text and delete komment (accept proposed change)  
+Ctl-2 retain new text and delete komment (reject proposed change)  
 If a komment contains no version tag, Ctl-1 and Ctl-2 both clear the komment.
 
 ### Installation
 
-Copy the `komments` folder to your `~/.TeXmacs/plugins` user folder, then do Tool\\(\\rightarrow\\)Update\\(\\rightarrow\\)Plugins. If you wan to change the keyboard shortcuts, you can edit them in the `~/.TeXmacs/plugins`/komments/progs/init-komments.scm file (if you want to find the exact location of your TeXmacs home folder in your system [use this file](https://github.com/texmacs/tm-forge/blob/main/miscellanea/find-your-texmacs-paths.tm)). Shortcuts are initially:
+Copy the `komments` folder to your `~/.TeXmacs/plugins` user folder, then do Tool→Update→Plugins. If you wan to change the keyboard shortcuts, you can edit them in the `~/.TeXmacs/plugins`/komments/progs/init-komments.scm file (if you want to find the exact location of your TeXmacs home folder in your system [use this file](https://github.com/texmacs/tm-forge/blob/main/miscellanea/find-your-texmacs-paths.tm)). Shortcuts are initially:
 
 ```
 (kbd-map 

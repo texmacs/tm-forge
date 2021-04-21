@@ -5,14 +5,14 @@ When working on a draft document as a co-author, one often needs to propose chan
 
 In TeXmacs, the Versioning Tool already provides an easy mechanism to mark changes made to a document and to revise them, accepting or rejecting them. However it lacks the notion of comments accompanying changes (it primarily searches differences between *files* and any added comment would appear as an addition to the text). And conversely, the recently added Comment package allows making comments, but if one proposes a change inside such a comment, it is then painful and error-prone to manually implement it. We need the two features combined.
 
-**This package tries to fill this gap by hacking commenting tools that work hand in hand with the Versioning Tools**.
+**This plugin tries to fill this gap by hacking commenting tools that work hand in hand with the Versioning Tools**.
 
-My commenting tools were developed before the official Comment package became available (and hence it does not make use of it). I have renamed my stuff to Komment, in order to avoid any confusion.
+This commenting tool was developed before the official Comment package became available (and hence it does not make use of it). I have renamed my stuff to Komment, in order to avoid any confusion.
 
 How it works
 ------------
 
-This Komment package provides a new “komment” tag for highlighting text chunks one wishes to change and/or comment, together with appropriate commands for introducing and editing that tag. Komments by multiple authors can co-exist and can be given a different highlighting color. Komments are also time-stamped.
+This Komment plugin provides a new “komment” tag for highlighting text chunks one wishes to change and/or comment, together with appropriate commands for introducing and editing that tag. Komments by multiple authors can co-exist and can be given a different highlighting color. Komments are also time-stamped.
 
 ![](./balloon_display.png)
 
@@ -35,42 +35,42 @@ The package uses a style file, scheme macros and widgets. Hopefully it illustrat
 Usage
 -----
 
-For a streamlined use, keyboard shortcuts are defined in `my-init-texmacs.scm` (I made no menu, we mostly re-use the Versioning menu). Below I explain what these do, but they can be defined differently, of course.
+For a streamlined use, keyboard shortcuts are defined in `init-komments.scm` (I made no menu, we mostly re-use the Versioning menu). Below I explain what these do, but they can be defined differently, of course.
 
-#### Introducing a komment : Ctl-m
+#### Introducing a komment : Ctrl-m
 
 Select some text beforehand and press Ctl-m. This brings up a text editing widget where you can enter the text of the komment. It can be as complicated as you want, contain equations… At the bottom of the widget, you can change the name of the komment author, and associate a color to that name.
 
 ![](./widget.png)
 
-#### Modifying a komment : Ctl-m
+#### Modifying a komment : Ctrl-m
 
-You can re-edit an existing komment by placing the cursor in it and pressing again Ctl-m. Be careful to close the widget (pressing OK) when you are done, or you could loose track of which widgets corresponds to which comment and your changes could get lost.
+You can re-edit an existing komment by placing the cursor in it and pressing again Ctrl-m. Be careful to close the widget (pressing OK) when you are done, or you could loose track of which widgets corresponds to which comment and your changes could get lost.
 
-#### Proposing a text change : Ctl-M (think “Modify")
+#### Proposing a text change : Ctrl-M (think “Modify")
 
-Select some text beforehand and press Ctl-M. This will automatically introduce a “version-both tag” inside a komment. The text that was selected is marked for deletion and the cursor is positioned to enter a replacement text, initially set to `×` (i.e. a `<version-suppressed>` tag, meaning it is a pure deletion with no replacement text). Conversely, Ctl-M with no initial selection is a pure text addition.
+Select some text beforehand and press Ctrl-M. This will automatically introduce a “version-both tag” inside a komment. The text that was selected is marked for deletion and the cursor is positioned to enter a replacement text, initially set to `×` (i.e. a `<version-suppressed>` tag, meaning it is a pure deletion with no replacement text). Conversely, Ctrl-M with no initial selection is a pure text addition.
 
-At that point the “comment” that could justify the change is empty; it can be added afterwards if needed, with Ctl-m.
+At that point the “comment” that could justify the change is empty; it can be added afterwards if needed, with Ctrl-m.
 
-#### Circulating between different display styles of the comment field : Ctl-/
+#### Circulating between different display styles of the comment field : Ctrl-/
 
 When using this keyboard shortcut, the resulting display style is shown in the bottom message bar.
 
 #### Toggle considering komment tags as a version tag.
 
-Only useful when a text contains both “normal” version tags and komments tags. It tells whether komment tags should be considered or ignored when navigating between the version tags (using the Version menu `previous difference` or `next difference` or the Ctl-up Ctl-down shortcuts).
+Only useful when a text contains both “normal” version tags and komments tags. It tells whether komment tags should be considered or ignored when navigating between the version tags (using the Version menu `previous difference` or `next difference` or the Ctrl-up Ctl-down shortcuts).
 
 #### Navigating between komments, control their display, accept or reject changes.
 
 I re-use the shortcuts of the Version tool menu, made more generally available.  
-Ctl-up jump to previous komment  
-Ctl-down jump to next komment  
-Ctl-left display old text only  
-Ctl-right display proposed new text only  
-Ctl-| display both old and new text  
-Ctl-1 retain old text and delete komment (accept proposed change)  
-Ctl-2 retain new text and delete komment (reject proposed change)  
+Ctrl-up jump to previous komment  
+Ctrl-down jump to next komment  
+Ctrl-left display old text only  
+Ctrl-right display proposed new text only  
+Ctrl-| display both old and new text  
+Ctrl-1 retain old text and delete komment (accept proposed change)  
+Ctrl-2 retain new text and delete komment (reject proposed change)  
 If a komment contains no version tag, Ctl-1 and Ctl-2 both clear the komment.
 
 ### Installation

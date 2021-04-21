@@ -39,7 +39,7 @@ For a streamlined use, keyboard shortcuts are defined in `init-komments.scm` (I 
 
 #### Introducing a komment : Ctrl-m
 
-Select some text beforehand and press Ctl-m. This brings up a text editing widget where you can enter the text of the komment. It can be as complicated as you want, contain equations… At the bottom of the widget, you can change the name of the komment author, and associate a color to that name.
+Select some text beforehand and press Ctrl-m. This brings up a text editing widget where you can enter the text of the komment. It can be as complicated as you want, contain equations… At the bottom of the widget, you can change the name of the komment author, and associate a color to that name.
 
 ![](./widget.png)
 
@@ -57,9 +57,9 @@ At that point the “comment” that could justify the change is empty; it can b
 
 When using this keyboard shortcut, the resulting display style is shown in the bottom message bar.
 
-#### Toggle considering komment tags as a version tag.
+#### Toggle considering komment tags as a version tag : Ctrl-:.
 
-Only useful when a text contains both “normal” version tags and komments tags. It tells whether komment tags should be considered or ignored when navigating between the version tags (using the Version menu `previous difference` or `next difference` or the Ctrl-up Ctl-down shortcuts).
+Only useful when a text contains both “normal” version tags and komments tags. It tells whether komment tags should be considered or ignored when navigating between the version tags (using the Version menu `previous difference` or `next difference` or the Ctrl-up Ctrl-down shortcuts).
 
 #### Navigating between komments, control their display, accept or reject changes.
 
@@ -71,7 +71,7 @@ Ctrl-right display proposed new text only
 Ctrl-| display both old and new text  
 Ctrl-1 retain old text and delete komment (accept proposed change)  
 Ctrl-2 retain new text and delete komment (reject proposed change)  
-If a komment contains no version tag, Ctl-1 and Ctl-2 both clear the komment.
+If a komment contains no version tag, Ctrl-1 and Ctrl-2 both clear the komment.
 
 ### Installation
 

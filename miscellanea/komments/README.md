@@ -75,7 +75,7 @@ If a komment contains no version tag, Ctl-1 and Ctl-2 both clear the komment.
 
 ### Installation
 
-Copy the `komments` folder to your `~/.TeXmacs/plugins` user folder, then do Tool→Update→Plugins. If you wan to change the keyboard shortcuts, you can edit them in the `~/.TeXmacs/plugins`/komments/progs/init-komments.scm file (if you want to find the exact location of your TeXmacs home folder in your system [use this file](https://github.com/texmacs/tm-forge/blob/main/miscellanea/find-your-texmacs-paths.tm)). Shortcuts are initially:
+Copy the `komments` folder to your `~/.TeXmacs/plugins` user folder, then do Tool→Update→Plugins. If you wan to change the keyboard shortcuts, you can edit them in the `~/.TeXmacs/plugins/komments/progs/init-komments.scm` file (if you want to find the exact location of your TeXmacs home folder in your system [use this file](https://github.com/texmacs/tm-forge/blob/main/miscellanea/find-your-texmacs-paths.tm)). Shortcuts are initially:
 
 ```
 (kbd-map 

@@ -13,8 +13,8 @@ See http://www.fontawesome.io for more details about the font itself.
 
 ## Use
 
-Add the `fontawesome` package to your TeXmacs document, then you can access the icons
-using the `aw` macro which takes as a unique argument the name of the desired icon.
+The plugin can be installed by just linking this directory from `$TEXMACS_HOME_PATH/plugins`. An additional package `fontawesome` will appear in the packages menus. Add it to your TeXmacs document and you can access the icons
+using the `aw` macro which takes two parameters: the name of the desired icon and the size relative to the current font size.
 The full list of icons is showcased in the document [./docs/fontawesome.tm] whose PDF version
 is [here](./docs/fontawesome.pdf).
 

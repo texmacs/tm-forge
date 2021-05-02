@@ -1,6 +1,6 @@
 
 
-# tm-forge/examples/resume-template
+# tm-forge/examples/seminar-journal
 
 v. 1.0 -- © License Creative Commons CC BY 4.0.
 

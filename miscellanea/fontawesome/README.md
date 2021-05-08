@@ -1,4 +1,4 @@
-The Font Awesome plugin
+# The Font Awesome plugin
 
 **High quality web icons for TeXmacs**
 
@@ -16,16 +16,16 @@ icons using the macro `<aw|icon-name|relative-size>`.
 
 The two parameters are the name of the icon and the size relative to the 
 current font size. The full list of icons is showcased [in the 
-documentation](fontawesome.en.tm). There is a PDF version 
+documentation](./docs/fontawesome.en.tm). There is a PDF version 
 [here](./docs/fontawesome.pdf).
 
-![](screenshot.png)
+![](./docs/screenshot.png)
 
-2021Massimiliano Gubinelli
+---
+(C) 2021 by Massimiliano Gubinelli
 
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.1 or
-any later version published by the Free Software Foundation; with no
-Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
-Texts. A copy of the license is included in the section entitled "GNU
-Free Documentation License".
+*Permission is granted to copy, distribute and/or modify this document under 
+the terms of the GNU Free Documentation License, Version 1.1 or any later 
+version published by the Free Software Foundation; with no Invariant Sections, 
+with no Front-Cover Texts, and with no Back-Cover Texts. A copy of the license 
+is included in the section entitled "GNU Free Documentation License".*

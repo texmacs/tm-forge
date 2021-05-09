@@ -9,5 +9,6 @@ Miscellaneous materials for TeXmacs
   * A lorem-ipsum generator ([dir](./lorem-ipsum))
   * A tetris game with TeXmacs tables ([dir](./tetris))
   * A document to easily find your TEXMACS_HOME_PATH and TEXMACS_PATH ([file](https://cdn.jsdelivr.net/gh/texmacs/tm-forge/miscellanea/find-your-texmacs-paths.tm))
-  * The komments plugin provides tools for handling text changes proposals and/or comments among co-authors
+  * The komments plugin provides tools for handling text changes proposals and/or comments among co-authors  ([dir](./komments))
   * A plugin to support the Fontawesome icon collections ([dir](./fontawesome))
+  * An "Outline mode" plugin for reorganizing documents in a structure-aware manner  ([dir](./komments))

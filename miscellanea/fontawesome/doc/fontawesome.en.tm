@@ -3,6 +3,10 @@
 <style|<tuple|tmdoc|british|fontawesome|biolinum-font>>
 
 <\body>
+  <\hide-preamble>
+    <include*|<find-file|$TEXMACS_HOME_PATH/plugins/fontawesome/packages/fontawesome.ts>>
+  </hide-preamble>
+
   <tmdoc-title|A <with|font-series|regular|<really-huge|<aw|font-awesome-logo-full|2.0>>>
   plugin for <really-huge|<TeXmacs>>>
 

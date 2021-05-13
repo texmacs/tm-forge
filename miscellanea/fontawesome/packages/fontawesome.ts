@@ -8,7 +8,7 @@
       <src-package|fontawesome|0.1>
 
       <\src-purpose>
-        Macros for Fontawsome 5
+        Macros for Fontawesome 5
       </src-purpose>
 
       <\src-copyright|2021>

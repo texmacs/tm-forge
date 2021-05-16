@@ -16,10 +16,10 @@ icons using the macro `<aw|icon-name|relative-size>`.
 
 The two parameters are the name of the icon and the size relative to the 
 current font size. The full list of icons is showcased [in the 
-documentation](./docs/fontawesome.en.tm). There is a PDF version 
-[here](./docs/fontawesome.pdf).
+documentation](./doc/fontawesome.en.tm). There is a PDF version 
+[here](./doc/fontawesome.pdf).
 
-![](./docs/screenshot.png)
+![](./doc/screenshot.png)
 
 ---
 (C) 2021 by Massimiliano Gubinelli

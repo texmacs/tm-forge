@@ -43,11 +43,27 @@ icons20= \
 	post-modern/20x20/mode/tm_switch.png	\
 	post-modern/20x20/mode/tm_table.png	
 
+icons16= \
+	post-modern/16x16/focus/tm_insert_down.png	\
+	post-modern/16x16/focus/tm_insert_left.png	\
+	post-modern/16x16/focus/tm_insert_right.png	\
+	post-modern/16x16/focus/tm_insert_up.png	\
+	post-modern/16x16/focus/tm_delete_down.png	\
+	post-modern/16x16/focus/tm_delete_left.png	\
+	post-modern/16x16/focus/tm_delete_right.png	\
+	post-modern/16x16/focus/tm_delete_up.png	
+
 
 icons24x2= $(icons24:.png=_x2.png)
 icons24x4= $(icons24:.png=_x4.png)
 
-all_icons= $(icons24) $(icons24x2) $(icons24x4) $(icons20) $(icons20x2) $(icons20x4)
+icons20x2= $(icons20:.png=_x2.png)
+icons20x4= $(icons20:.png=_x4.png)
+
+icons16x2= $(icons16:.png=_x2.png)
+icons16x4= $(icons16:.png=_x4.png)
+
+all_icons= $(icons24) $(icons24x2) $(icons24x4) $(icons20) $(icons20x2) $(icons20x4) $(icons16) $(icons16x2) $(icons16x4)
 
 all: $(all_icons)
 
@@ -73,4 +89,13 @@ $(icons20x2): %_x2.png : src/%.svg
 
 $(icons20x4): %_x4.png : src/%.svg
 	$(INKSCAPE) --export-type="png" -w 80 -o $@ $<
+
+$(icons16): %.png : src/%.svg
+	$(INKSCAPE) --export-type="png" -w 16 -o $@ $<
+
+$(icons16x2): %_x2.png : src/%.svg
+	$(INKSCAPE) --export-type="png" -w 32 -o $@ $<
+
+$(icons16x4): %_x4.png : src/%.svg
+	$(INKSCAPE) --export-type="png" -w 64 -o $@ $<
 

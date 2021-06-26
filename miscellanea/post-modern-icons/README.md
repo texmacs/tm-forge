@@ -4,11 +4,11 @@ A "post-modern" icon style for TeXmacs.
 
 (c) 2021 Massimiliano Gubinelli
 
-This is an iconset which (partially so far) replace TeXmacs standard icons.
+This is an iconset which (partially so far) replaces TeXmacs standard icons.
 
 ** WORK IN PROGRESS **
 
-It is based on the [heroicons](https://github.com/tailwindlabs/heroicons) icon set 
+It is largely based on the [heroicons](https://github.com/tailwindlabs/heroicons) icon set 
 (Copyright (c) 2020 Refactoring UI Inc. - MIT license)
 
 ![](./screenshot.png)

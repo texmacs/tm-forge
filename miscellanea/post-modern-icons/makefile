@@ -44,10 +44,21 @@ icons20= \
 	post-modern/20x20/mode/tm_table.png	
 
 icons16= \
+	post-modern/16x16/focus/tm_theme.png	\
+	post-modern/16x16/focus/tm_similar_first.png	\
+	post-modern/16x16/focus/tm_similar_last.png	\
+	post-modern/16x16/focus/tm_similar_next.png	\
+	post-modern/16x16/focus/tm_similar_previous.png	\
+	post-modern/16x16/focus/tm_lock_closed.png	\
+	post-modern/16x16/focus/tm_lock_open.png	\
+	post-modern/16x16/focus/tm_like.png	\
 	post-modern/16x16/focus/tm_insert_down.png	\
 	post-modern/16x16/focus/tm_insert_left.png	\
 	post-modern/16x16/focus/tm_insert_right.png	\
 	post-modern/16x16/focus/tm_insert_up.png	\
+	post-modern/16x16/focus/tm_focus_style.png	\
+	post-modern/16x16/focus/tm_focus_search.png	\
+	post-modern/16x16/focus/tm_filter.png	\
 	post-modern/16x16/focus/tm_delete_down.png	\
 	post-modern/16x16/focus/tm_delete_left.png	\
 	post-modern/16x16/focus/tm_delete_right.png	\

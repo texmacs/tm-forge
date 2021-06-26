@@ -13,7 +13,7 @@
    fill="none"
    version="1.1"
    id="svg4189"
-   sodipodi:docname="tm_focus_style.svg"
+   sodipodi:docname="tm_theme.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <metadata
      id="metadata4195">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,7 +38,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1234"
+     inkscape:window-width="1262"
      inkscape:window-height="781"
      id="namedview4191"
      showgrid="true"
@@ -49,27 +49,31 @@
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4189">
+     inkscape:current-layer="svg4189"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid4758" />
   </sodipodi:namedview>
   <g
      id="g4762"
-     transform="matrix(0.65718579,0,0,0.65718579,0.1136358,0.11377052)">
+     transform="matrix(0.65718579,0,0,0.65718579,0.1136358,0.11377052)"
+     style="stroke-width:2.43462355;stroke-miterlimit:4;stroke-dasharray:none">
     <path
        d="m 14.9998,12 c 0,1.6569 -1.3432,3 -3,3 -1.6569,0 -3.00004,-1.3431 -3.00004,-3 0,-1.6569 1.34314,-3 3.00004,-3 1.6568,0 3,1.3431 3,3 z"
        stroke="#4a5568"
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="path4185" />
+       id="path4185"
+       style="stroke-width:2.43462355;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
        d="M 2.45801,12 C 3.73228,7.94288 7.52257,5 12.0002,5 c 4.4776,0 8.2679,2.94291 9.5422,7 -1.2743,4.0571 -5.0646,7 -9.5422,7 -4.47764,0 -8.26794,-2.9429 -9.54219,-7 z"
        stroke="#4a5568"
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="path4187" />
+       id="path4187"
+       style="stroke-width:2.43462355;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
 </svg>

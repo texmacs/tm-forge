@@ -43,10 +43,10 @@
      id="namedview837"
      showgrid="true"
      inkscape:zoom="19.710602"
-     inkscape:cx="9.1236081"
-     inkscape:cy="7.0280564"
-     inkscape:window-x="147"
-     inkscape:window-y="23"
+     inkscape:cx="3.2638175"
+     inkscape:cy="9.9199011"
+     inkscape:window-x="77"
+     inkscape:window-y="80"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg835"
      inkscape:document-rotation="0"
@@ -55,23 +55,26 @@
      inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
-       id="grid1605" />
+       id="grid1605"
+       empspacing="4"
+       spacingx="0.5"
+       spacingy="0.5" />
   </sodipodi:namedview>
   <path
-     d="m 2.5014651,7.9999988 2.814187,-4.253302 c 0.230608,-0.248731 0.8694767,-0.388448 0.8694767,-0.388448 h 4.9676102 c 0.679132,0 1.229644,0.593746 1.229644,1.326214 v 6.6310742 c 0,0.732447 -0.550512,1.326214 -1.229644,1.326214 H 6.1851288 c -0.3261017,0 -0.6800367,-0.102127 -0.8694767,-0.388442 z"
+     d="m 1.2505792,8.0000008 3.3958191,5.1323642 c 0.2782688,0.300138 1.0491754,0.468733 1.0491754,0.468733 h 6.0480233 c 0.819494,0 1.483785,-0.716462 1.483785,-1.600315 V 3.9992148 c 0,-0.8838275 -0.664291,-1.6003129 -1.483785,-1.6003129 H 5.6955737 c -0.3934983,0 -0.8205832,0.1232344 -1.0491754,0.4687244 z"
      stroke="#374151"
-     stroke-width="1.27701"
+     stroke-width="1.45537"
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path833"
-     sodipodi:nodetypes="cccssssssc" />
+     sodipodi:nodetypes="cccssssssc"
+     style="stroke-width:1.5882;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
-     d="M 8.0135786,5.6618945 8,8 M 8,8 7.986421,10.338105 M 8,8 5.6618945,7.9864212 M 8,8 10.338105,8.013579"
-     stroke="#374151"
-     stroke-width="2.56681"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     id="path833-0"
-     sodipodi:nodetypes="cccccccc"
-     style="stroke-width:1.3;stroke-miterlimit:4;stroke-dasharray:none" />
+     style="fill:none;stroke:#374151;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 8,5.0226776 V 10.958569"
+     id="path4054" />
+  <path
+     style="fill:none;stroke:#374151;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 10.967946,8 H 5.0320541"
+     id="path4054-9" />
 </svg>

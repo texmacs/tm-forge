@@ -44,6 +44,7 @@ icons20= \
 	post-modern/20x20/mode/tm_table.png	
 
 icons16= \
+	post-modern/16x16/focus/tm_add.png	\
 	post-modern/16x16/focus/tm_theme.png	\
 	post-modern/16x16/focus/tm_similar_first.png	\
 	post-modern/16x16/focus/tm_similar_last.png	\
@@ -56,6 +57,8 @@ icons16= \
 	post-modern/16x16/focus/tm_insert_left.png	\
 	post-modern/16x16/focus/tm_insert_right.png	\
 	post-modern/16x16/focus/tm_insert_up.png	\
+	post-modern/16x16/focus/tm_focus_help.png	\
+	post-modern/16x16/focus/tm_focus_prefs.png	\
 	post-modern/16x16/focus/tm_focus_style.png	\
 	post-modern/16x16/focus/tm_focus_search.png	\
 	post-modern/16x16/focus/tm_filter.png	\

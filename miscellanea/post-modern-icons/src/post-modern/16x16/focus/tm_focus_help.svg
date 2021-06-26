@@ -12,11 +12,11 @@
    viewBox="0 0 16 16"
    fill="none"
    version="1.1"
-   id="svg5343"
-   sodipodi:docname="tm_similar_previous.svg"
+   id="svg5513"
+   sodipodi:docname="tm_focus_help.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <metadata
-     id="metadata5349">
+     id="metadata5519">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -28,7 +28,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs5347" />
+     id="defs5517" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,32 +38,30 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1380"
-     inkscape:window-height="804"
-     id="namedview5345"
+     inkscape:window-width="1270"
+     inkscape:window-height="746"
+     id="namedview5515"
      showgrid="true"
-     inkscape:snap-global="false"
-     inkscape:zoom="39.421203"
-     inkscape:cx="7.5234187"
-     inkscape:cy="7.8398023"
+     inkscape:zoom="19.710602"
+     inkscape:cx="8.8430493"
+     inkscape:cy="9.4529148"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg5343"
-     inkscape:document-rotation="0">
+     inkscape:current-layer="svg5513">
     <inkscape:grid
-       type="xygrid"
-       id="grid5912"
        spacingx="0.5"
        spacingy="0.5"
-       empspacing="4" />
+       empspacing="4"
+       type="xygrid"
+       id="grid6082" />
   </sodipodi:namedview>
   <path
-     d="m 7.1060314,5.2095036 c 0.446974,-0.4566476 1.3409214,-0.4566476 1.7878949,0 l 4.4697597,4.5658642 c 0.552483,0.5643792 0.02687,1.3697672 -0.893947,1.3697672 H 3.5302415 c -0.9207646,0 -1.4464064,-0.805388 -0.8939464,-1.3697672 z"
-     stroke="#374151"
-     stroke-width="1.86016"
+     d="M 8.7222223,10.888889 H 8.0000001 V 8 H 7.2777778 M 8.0000001,5.1111111 h 0.00722 M 14.5,8 c 0,3.589878 -2.910122,6.5 -6.4999999,6.5 C 4.4101511,14.5 1.5,11.589878 1.5,8 1.5,4.4101511 4.4101511,1.5 8.0000001,1.5 11.589878,1.5 14.5,4.4101511 14.5,8 Z"
+     stroke="#4a5568"
+     stroke-width="1.44445"
      stroke-linecap="round"
      stroke-linejoin="round"
-     id="path5339"
-     style="fill:none;fill-opacity:1;stroke-width:1.91809;stroke-miterlimit:4;stroke-dasharray:none" />
+     id="path5511"
+     style="stroke-width:1.6;stroke-miterlimit:4;stroke-dasharray:none" />
 </svg>

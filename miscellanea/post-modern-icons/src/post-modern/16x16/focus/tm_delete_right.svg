@@ -38,15 +38,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1068"
-     inkscape:window-height="675"
+     inkscape:window-width="1178"
+     inkscape:window-height="775"
      id="namedview837"
      showgrid="true"
      inkscape:zoom="19.710602"
-     inkscape:cx="9.1236081"
-     inkscape:cy="7.0280564"
-     inkscape:window-x="68"
-     inkscape:window-y="37"
+     inkscape:cx="3.2638175"
+     inkscape:cy="9.9199011"
+     inkscape:window-x="77"
+     inkscape:window-y="80"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg835"
      inkscape:document-rotation="0"
@@ -55,23 +55,30 @@
      inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
-       id="grid1605" />
+       id="grid1605"
+       empspacing="4"
+       spacingx="0.5"
+       spacingy="0.5" />
   </sodipodi:namedview>
   <path
-     d="M 13.650748,7.9492647 10.836561,3.6959627 C 10.605953,3.4472317 9.9670848,3.3075147 9.9670848,3.3075147 h -4.96761 c -0.679132,0 -1.229644,0.593746 -1.229644,1.326214 v 6.6310743 c 0,0.732447 0.550512,1.326214 1.229644,1.326214 h 4.96761 c 0.3261012,0 0.6800362,-0.102127 0.8694762,-0.388442 z"
+     d="M 14.647961,7.9999993 11.252142,2.867635 C 10.973873,2.567497 10.202968,2.398902 10.202968,2.398902 H 4.1549434 c -0.819494,0 -1.483785,0.716462 -1.483785,1.600315 v 8.001568 c 0,0.883827 0.664291,1.600313 1.483785,1.600313 h 6.0480246 c 0.393498,0 0.820582,-0.123235 1.049174,-0.468725 z"
      stroke="#374151"
-     stroke-width="1.27701"
+     stroke-width="1.45537"
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path833"
-     sodipodi:nodetypes="cccssssssc" />
-  <path
-     d="M 10,6 8,8 M 8,8 6,10 M 8,8 6,6 m 2,2 2,2"
-     stroke="#374151"
-     stroke-width="2.56681"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     id="path833-0"
-     sodipodi:nodetypes="cccccccc"
-     style="stroke-width:1.32021;stroke-miterlimit:4;stroke-dasharray:none" />
+     sodipodi:nodetypes="cccssssssc"
+     style="stroke-width:1.5882;stroke-miterlimit:4;stroke-dasharray:none" />
+  <g
+     id="g4192"
+     transform="rotate(45,8.0000001,7.9906233)">
+    <path
+       style="fill:none;stroke:#374151;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 8,5.0226776 V 10.958569"
+       id="path4054" />
+    <path
+       style="fill:none;stroke:#374151;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.967946,8 H 5.0320541"
+       id="path4054-9" />
+  </g>
 </svg>

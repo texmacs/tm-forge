@@ -4,7 +4,14 @@ INKSCAPE= /Applications/Inkscape.app/Contents/MacOS/inkscape --batch-process
 
 
 icons24= \
-	post-modern/24x24/main/backspace.png	\
+	post-modern/24x24/main/tm_cloud.png	\
+	post-modern/24x24/main/tm_cloud_download.png	\
+	post-modern/24x24/main/tm_cloud_upload.png	\
+	post-modern/24x24/main/tm_cloud_home.png	\
+	post-modern/24x24/main/tm_cloud_mail.png	\
+	post-modern/24x24/main/tm_cloud_mail_new.png	\
+	post-modern/24x24/main/tm_cloud_file.png	\
+	post-modern/24x24/main/tm_cloud_dir.png	\
 	post-modern/24x24/main/tm_back.png	\
 	post-modern/24x24/main/tm_build.png	\
 	post-modern/24x24/main/tm_cancel.png	\
@@ -44,6 +51,8 @@ icons20= \
 	post-modern/20x20/mode/tm_table.png	
 
 icons16= \
+	post-modern/16x16/focus/tm_exit_left.png	\
+	post-modern/16x16/focus/tm_exit_right.png	\
 	post-modern/16x16/focus/tm_add.png	\
 	post-modern/16x16/focus/tm_theme.png	\
 	post-modern/16x16/focus/tm_similar_first.png	\
@@ -57,6 +66,7 @@ icons16= \
 	post-modern/16x16/focus/tm_insert_left.png	\
 	post-modern/16x16/focus/tm_insert_right.png	\
 	post-modern/16x16/focus/tm_insert_up.png	\
+	post-modern/16x16/focus/tm_focus_delete.png	\
 	post-modern/16x16/focus/tm_focus_help.png	\
 	post-modern/16x16/focus/tm_focus_prefs.png	\
 	post-modern/16x16/focus/tm_focus_style.png	\

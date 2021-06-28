@@ -51,6 +51,10 @@ icons20= \
 	post-modern/20x20/mode/tm_table.png	
 
 icons16= \
+	post-modern/16x16/focus/tm_search_first.png	\
+	post-modern/16x16/focus/tm_search_last.png	\
+	post-modern/16x16/focus/tm_search_next.png	\
+	post-modern/16x16/focus/tm_search_previous.png	\
 	post-modern/16x16/focus/tm_go.png	\
 	post-modern/16x16/focus/tm_stop.png	\
 	post-modern/16x16/focus/tm_exit_left.png	\

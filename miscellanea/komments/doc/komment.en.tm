@@ -1,8 +1,10 @@
-<TeXmacs|1.99.19>
+<TeXmacs|2.1.1>
 
-<style|generic>
+<style|<tuple|tmdoc|doc|british|old-spacing|old-dots|old-lengths>>
 
 <\body>
+  <tmdoc-title|The Komments plugin>
+
   <section*|Tools for handling proposed text changes in (offline)
   collaborative editing>
 
@@ -36,7 +38,7 @@
   can co-exist and can be given a different highlighting color. Komments are
   also time-stamped.
 
-  <image|./balloon_display.png|0.6383w|||>
+  <image|../balloon_display.png|0.6383w|||>
 
   A komment tag can appear as
 
@@ -49,7 +51,7 @@
     editing.
   </itemize>
 
-  <image|./inline_display.png|0.6383w|||>
+  <image|../inline_display.png|0.6383w|||>
 
   Within this highlighting markup, proposed text modifications are shown as
   \Pversion-both\Q tags (with the comment field possibly empty).
@@ -77,7 +79,7 @@
   widget, you can change the name of the komment author, and associate a
   color to that name.
 
-  <image|./widget.png|0.6383w|||>
+  <image|../widget.png|0.6383w|||>
 
   <subsubsection*|Modifying a komment : <kbd|Ctrl-m>>
 
@@ -123,9 +125,9 @@
   komment<next-line><kbd|Ctrl-left> display old text
   only<next-line><kbd|Ctrl-right> display proposed new text
   only<next-line><kbd|Ctrl-\|> display both old and new
-  text<next-line><kbd|Ctrl-1> retain old text and delete komment (accept
+  text<next-line><kbd|Ctrl-1> retain old text and delete komment (reject
   proposed change)<next-line><kbd|Ctrl-2> retain new text and delete komment
-  (reject proposed change)<next-line>If a komment contains no version tag,
+  (accept proposed change)<next-line>If a komment contains no version tag,
   <kbd|Ctrl-1> and <kbd|Ctrl-2> both clear the komment.
 
   <subsection*|Installation>
@@ -178,78 +180,16 @@
   fulfill your needs or expectations. There are some display quirks, for
   instance when a comment is inserted in the caption of a big figure (making
   it hard to read and edit). This could probably be improved.
+
+  <tmdoc-copyright|2022|Philippe Joyez>
+
+  <tmdoc-license|Permission is granted to copy, distribute and/or modify this
+  document under the terms of the GNU Free Documentation License, Version 1.1
+  or any later version published by the Free Software Foundation; with no
+  Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+  Texts. A copy of the license is included in the section entitled "GNU Free
+  Documentation License".>
 </body>
 
-<\initial>
-  <\collection>
-    <associate|preamble|false>
-  </collection>
-</initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|?|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-2|<tuple|?|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-4|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-5|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-6|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-7|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-8|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|?|../../../../../../.TeXmacs/texts/scratch/no_name_63.tm>>
-  </collection>
-</references>
-
-<\auxiliary>
-  <\collection>
-    <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Tools
-      for handling proposed text changes in (offline) collaborative editing>
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-1><vspace|0.5fn>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|How
-      it works> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.5fn>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Usage>
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.5fn>
-
-      <with|par-left|<quote|2tab>|Introducing a komment : Ctrl-m
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4>>
-
-      <with|par-left|<quote|2tab>|Modifying a komment : Ctrl-m
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5>>
-
-      <with|par-left|<quote|2tab>|Proposing a text change : Ctrl-M (think
-      \PModify") <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6>>
-
-      <with|par-left|<quote|2tab>|Circulating between different display
-      styles of the comment field : Ctrl-/
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
-
-      <with|par-left|<quote|2tab>|Toggle considering komment tags as a
-      version tag. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
-
-      <with|par-left|<quote|2tab>|Navigating between komments, control their
-      display, accept or reject changes. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9>>
-
-      <with|par-left|<quote|1tab>|Installation
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10>>
-
-      <with|par-left|<quote|1tab>|Limitations
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11>>
-    </associate>
-  </collection>
-</auxiliary>
+<initial|<\collection>
+</collection>>

@@ -1,8 +1,10 @@
-<TeXmacs|1.99.20>
+<TeXmacs|2.1.1>
 
-<style|<tuple|web-article|alt-colors|triangle-list|doc>>
+<style|<tuple|tmdoc|doc|british|old-spacing|old-dots|old-lengths>>
 
 <\body>
+  <tmdoc-title|The Outline plugin>
+
   <doc-data|<doc-title|\POutline mode\Q plugin for <TeXmacs> : easy
   reorganization of documents>>
 
@@ -43,9 +45,9 @@
       Same <hlink|document|https://raw.githubusercontent.com/richi235/bachelor-thesis-link-aggregation-tunneling/master/main_thesis.tm>
       in Outline mode
     </cell>>|<row|<\cell>
-      <image|normal.png|500px|||>
+      <image|../normal.png|0.5par|||>
     </cell>|<\cell>
-      <image|outlined.png|500px|||>
+      <image|../outlined.png|0.5par|||>
     </cell>>>>
   </wide-tabular>
 
@@ -60,7 +62,7 @@
   branches or node of the document's tree structure, for reorganizing it.
   Note that these buttons can reorganize nested lists too.
 
-  <image|toolbar.png|567px|||>
+  <image|../toolbar.png|0.66par|||>
 
   While in the \Poutline mode\Q (left-most button \Ppressed\Q), the rendering
   of the document is modified to make it more compact (in order to get a
@@ -78,46 +80,51 @@
   shortcut <kbd|Ctrl-Shift-o> (think \POutline\Q). The different buttons on
   the toolbar are : \ 
 
-  <\description-compact>
-    <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|<text|Outline>>>>>>>>>>
-    Toggles the outline mode (makes the document hierarchical with outline
-    folds).
+  <\with|par-left|1tab>
+    \;
 
-    <aligned-space-item|<image|./misc/pixmaps/tm_refresh.svg|1fn|||>>Refresh
-    the hierarchy of elements in the current branch to make the fold nesting
-    consistent with the logical structure. This is useful after performing
-    manual modifications which break the hierarchy.\ 
+    <\description-compact>
+      <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|<text|Outline>>>>>>>>>>
+      Toggles the outline mode (makes the document hierarchical with outline
+      folds).
 
-    <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|<text|Close
-    others>>>>>>>>>>Closes all folds except those needed for the cursor to be
-    visible.
+      <aligned-space-item|<image|../misc/pixmaps/tm_refresh.svg|1fn|||>>Refresh
+      the hierarchy of elements in the current branch to make the fold
+      nesting consistent with the logical structure. This is useful after
+      performing manual modifications which break the hierarchy.\ 
 
-    <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|Show
-    to ...>>>>>>>>>Select the hierarchy depth you want to see.
+      <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|<text|Close
+      others>>>>>>>>>>Closes all folds except those needed for the cursor to
+      be visible.
 
-    <aligned-space-item|<image|./misc/pixmaps/tm_new_subsection.svg|1fn|||>>Insert
-    new sectional tag at a level consistent with the cursor position. If some
-    text is selected, makes it the new section header or list item. Works
-    only in outline mode. While the buttons described below also operate on
-    list-like tags, this one does not add items to lists; it only inserts
-    sectional tags..
+      <aligned-space-item|<small|<math|<with|ornament-shape|classic|<tabular|<tformat|<cwith|1|1|1|1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-bborder|1ln>|<cwith|1|1|1|1|cell-lborder|1ln>|<cwith|1|1|1|1|cell-rborder|1ln>|<cwith|1|1|1|1|cell-hyphen|n>|<table|<row|<cell|Show
+      to ...>>>>>>>>>Select the hierarchy depth you want to see.
 
-    <aligned-space-item|<image|./misc/pixmaps/tm_outline_downgrade_node.svg|1fn|||>
-    \| <image|./misc/pixmaps/tm_outline_upgrade_node.svg|1fn|||>>Downgrade \|
-    Upgrade the current section (or list item) in the hierarchy, leaving its
-    substructure at the level it was.
+      <aligned-space-item|<image|../misc/pixmaps/tm_new_subsection.svg|1fn|||>>Insert
+      new sectional tag at a level consistent with the cursor position. If
+      some text is selected, makes it the new section header or list item.
+      Works only in outline mode. While the buttons described below also
+      operate on list-like tags, this one does not add items to lists; it
+      only inserts sectional tags..
 
-    <aligned-space-item|<image|./misc/pixmaps/tm_outline_downgrade_branch.svg|1fn|||>
-    \| <image|./misc/pixmaps/tm_outline_upgrade_branch.svg|1fn|||>>Downgrade
-    \| Upgrade the current section (or list item) in the hierarchy,
-    <strong|together with> its substructure.
+      <aligned-space-item|<image|../misc/pixmaps/tm_outline_downgrade_node.svg|1fn|||>
+      \| <image|../misc/pixmaps/tm_outline_upgrade_node.svg|1fn|||>>Downgrade
+      \| Upgrade the current section (or list item) in the hierarchy, leaving
+      its substructure at the level it was.
 
-    <aligned-space-item|<image|./misc/pixmaps/tm_outline_move_up.svg|1fn|||>
-    \| <image|./misc/pixmaps/tm_outline_move_down.svg|1fn|||>>Move Up \| Down
-    the current section (or list item) in the hierarchy, <strong|together
-    with> its substructure, if possible. This operation only changes the
-    order of appearance of subitems present at a given node of the structure.
-  </description-compact>
+      <aligned-space-item|<image|../misc/pixmaps/tm_outline_downgrade_branch.svg|1fn|||>
+      \| <image|../misc/pixmaps/tm_outline_upgrade_branch.svg|1fn|||>>Downgrade
+      \| Upgrade the current section (or list item) in the hierarchy,
+      <strong|together with> its substructure.
+
+      <aligned-space-item|<image|../misc/pixmaps/tm_outline_move_up.svg|1fn|||>
+      \| <image|../misc/pixmaps/tm_outline_move_down.svg|1fn|||>>Move Up \|
+      Down the current section (or list item) in the hierarchy,
+      <strong|together with> its substructure, if possible. This operation
+      only changes the order of appearance of subitems present at a given
+      node of the structure.
+    </description-compact>
+  </with>
 
   <section*|Installation>
 
@@ -224,77 +231,15 @@
   it (Do not report issues with arbitrarily large or complex documents and/or
   with custom style macros, they will not be investigated).
 
-  \;
+  <tmdoc-copyright|2022|Philippe Joyez>
+
+  <tmdoc-license|Permission is granted to copy, distribute and/or modify this
+  document under the terms of the GNU Free Documentation License, Version 1.1
+  or any later version published by the Free Software Foundation; with no
+  Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+  Texts. A copy of the license is included in the section entitled "GNU Free
+  Documentation License".>
 </body>
 
-<\initial>
-  <\collection>
-    <associate|framed-width|>
-    <associate|mem-page-medium|automatic>
-    <associate|mem-page-zoom|1.0>
-    <associate|ornament-shape|angular>
-    <associate|outline-mode|false>
-    <associate|page-medium|automatic>
-    <associate|par-mode|left>
-    <associate|preamble|false>
-  </collection>
-</initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|?|?>>
-    <associate|auto-10|<tuple|1|?>>
-    <associate|auto-2|<tuple|?|?>>
-    <associate|auto-3|<tuple|?|?>>
-    <associate|auto-4|<tuple|?|?>>
-    <associate|auto-5|<tuple|?|?>>
-    <associate|auto-6|<tuple|?|?>>
-    <associate|auto-7|<tuple|?|?>>
-    <associate|auto-8|<tuple|1|?>>
-    <associate|auto-9|<tuple|1|?>>
-    <associate|footnote-1|<tuple|1|?>>
-    <associate|footnr-1|<tuple|1|?>>
-  </collection>
-</references>
-
-<\auxiliary>
-  <\collection>
-    <\associate|idx>
-      <tuple|<tuple|<with|font-family|<quote|ss>|Tools>|<with|font-family|<quote|ss>|Update>|<with|font-family|<quote|ss>|Plugins>>|<pageref|auto-5>>
-
-      <tuple|<tuple|<with|font-family|<quote|ss>|Document>|<with|font-family|<quote|ss>|Source>|<with|font-family|<quote|ss>|Edit>>|<pageref|auto-8>>
-
-      <tuple|<tuple|<with|font-family|<quote|ss>|Document>|<with|font-family|<quote|ss>|Source>|<with|font-family|<quote|ss>|Preferences>|<with|font-family|<quote|ss>|Tags
-      with special rendering>|<with|font-family|<quote|ss>|raw>>|<pageref|auto-9>>
-    </associate>
-    <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|How
-      it works - user side> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-1><vspace|0.5fn>
-
-      <with|par-left|<quote|1tab>|Outline Toolbar
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2>>
-
-      <with|par-left|<quote|1tab>|Toolbar buttons
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3>>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Installation>
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4><vspace|0.5fn>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Limitations
-      & Warning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|How
-      it works - coder side> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7><vspace|0.5fn>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Reporting
-      Outline plugin bugs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10><vspace|0.5fn>
-    </associate>
-  </collection>
-</auxiliary>
+<initial|<\collection>
+</collection>>

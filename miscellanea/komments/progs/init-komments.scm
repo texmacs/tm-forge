@@ -17,19 +17,7 @@
   (:require #t))
 
 (when (supports-komments?)
-  (use-modules (komments))
-  (kbd-map 
-    ("C-m" (make-komment))
-    ("C-M" (make-correction))
-    ("C-/" (circulate-komment-style))
-    ("C-:" (toggle-komment-as-version-tag))
-    ("C-up" (version-previous-difference))
-    ("C-down" (version-next-difference))
-    ("C-|" (version-show 'version-both))
-    ("C-left" (version-show 'version-old))
-    ("C-right" (version-show 'version-new))
-    ("C-1" (version-retain 0))
-    ("C-2" (version-retain 1))
-  )  
+  ;;(use-modules (komments))
+  ;; do nothing, will load the module only when the style is loaded  
 )
 

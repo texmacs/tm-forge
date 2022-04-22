@@ -9,8 +9,10 @@
 ;; in the root directory or <http://www.gnu.org/licenses/gpl-3.0.html>.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; This package provides tools aimed at helping collaborative editing.
-;;
+;; This module provides tools aimed at helping collaborative editing.
+;; The module is loaded when the style is added to a file; we then define our 
+;; shortcuts. I've not checked whether they colide with existing ones in some
+;; look-and-feel
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (texmacs-module (komments)
@@ -18,6 +20,19 @@
   (:use (prog prog-edit))
   )
 
+(kbd-map 
+    ("C-m" (make-komment))
+    ("C-M" (make-correction))
+    ("C-/" (circulate-komment-style))
+    ("C-:" (toggle-komment-as-version-tag))
+    ("C-up" (version-previous-difference))
+    ("C-down" (version-next-difference))
+    ("C-|" (version-show 'version-both))
+    ("C-left" (version-show 'version-old))
+    ("C-right" (version-show 'version-new))
+    ("C-1" (version-retain 0))
+    ("C-2" (version-retain 1))
+  )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; inserting komments
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -9,7 +9,7 @@ The keyboard shortcut is in the example `my-init-TeXmacs.scm` file assigned to t
 
 To be able to use the function, please insert a keyboard shortcut for the `insert-csvTable` command into your `my-init-TeXmacs.scm` file; the keyboard shortcut must be written in such a way to call the `insert-csvTable` with a file argument; you can copy-paste the contents of the example `my-init-TeXmacs.scm` file into your `my-init-TeXmacs.scm` initialization file. Place as well the `csvTable.csm` file in the `/prog/tables/simple/csvTable` directory of the `.TeXmacs` TeXMacs user configuration directory.
 
-If  you put  the `csvTable.csm` file in a directory different from `/prog/tables/simple/csvTable`, then please modify accordingly the `use-modules` form in the `my-init-texmacs.scm` configuration file.
+The `my-init-TeXmacs.scm` file needs an `use-modules` form as well, in the example file it is `(use-modules (tables simple csvTable))`, which you can copy-paste into your `my-init-TeXmacs.scm` initialization file if you have put the `csvTable.csm` file in `/prog/tables/simple/csvTable`.  If  you put  the `csvTable.csm` file in a directory different from `/prog/tables/simple/csvTable`, then please modify accordingly the `use-modules` form.
 
 ### How to write the keyboard shortcut
 

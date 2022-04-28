@@ -24,7 +24,7 @@
 
 (kbd-map
   ("t a b l e tab"
-   (top-window table-message-widget "Insert table message")))
+   (top-window csvTable-message-widget "Insert table message")))
 
 (kbd-map
   (:require (and  (or (in-text?) (in-big-table?)) (not (in-table?))))

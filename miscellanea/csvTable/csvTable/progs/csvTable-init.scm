@@ -8,15 +8,17 @@
 (in-big-table% (inside? 'big-table) in-text%))
 
 
-;; Widget for issuing a message to the user when the function is used outside
+;; With this Widget we issue a message to the user when the function is used outside
 ;; the planned environments
-(tm-widget (table-message-widget)
-  (hlist
-    (text "Please insert table in plain text")
-    >>>
-    (explicit-buttons ("or big-table environment" (display "message from insert table widget")))))
+(tm-widget (csvTable-message-widget)
+  (vlist
+    (centered
+      (text "Please insert table in plain text")
+      ===
+      (text "or big-table environment"))))
 
-;; Map t a b l e tab to either a message for the user, if the cursor is outside
+
+;; Map "t a b l e tab" to either a message for the user, if the cursor is outside
 ;; all of the environments where it is expected to work, or to the insertion of
 ;; a table at the cursor position
 

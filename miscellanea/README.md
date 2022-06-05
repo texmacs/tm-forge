@@ -12,4 +12,5 @@ Miscellaneous materials for TeXmacs
   * The `komments` plugin provides tools for handling text changes proposals and/or comments among co-authors  ([dir](./komments))
   * A plugin to support the Fontawesome icon collections ([dir](./fontawesome))
   * An "Outline mode" plugin for reorganizing documents in a structure-aware manner  ([dir](./outline))
+  * A plugin to move slides around in beamer presentations ([dir](./slidemove))
   * the `post-modern` icon collection ([dir](./post-modern-icons))

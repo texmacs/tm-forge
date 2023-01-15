@@ -8,7 +8,8 @@ Example documents
 
   * A large free-style mathematical composition ([tm](./math-diagram-frontisi/math-diagram-frontisi.tm)) ([pdf](./math-diagram-frontisi/math-diagram-frontisi.pdf))
   * Slides for a mechanics lecture at Ecole polytechnique, using custom style file ([tm](./lecture-slides-audoly/amphi08_tm.tm)) ([pdf](./lecture-slides-audoly/amphi08_tm.pdf))
-  * A couple mechanics papers written using TeXmacs ([dir](./papers-audoly/))
+  * A couple mechanics papers written using TeXmacs by Basile Audoly ([dir](./papers-audoly/))
+  * Some papers written using TeXmacs by Massimiliano Gubinelli  ([dir](./papers-gubinelli/))
   * A template for a resume ([dir](./resume-template/))
   * Anoter template for a CV ([dir](./cv-altmejd/))
   * And another ([dir](./kjh-vita/))

@@ -17,7 +17,9 @@ Example documents
   * Slides for a talk on TeXmacs & Guile in Strasbourg in 2019 ([dir](./talk-texmacs-guile)) ([pdf](./talk-texmacs-guile/talk-texmacs-guile-strasbourg-june-2019.pdf)) ([screenshot](./talk-texmacs-guile/screenshot.png))
   * A template for exercises sheets/tutorials ([dir](./exercises-template)) ([pdf](./exercises-template/exercises-template.pdf)) ([screenshot](./exercises-template/exercises-template.png))
   * A document for taking searchable notes during talks and seminar with TeXmacs ([dir](./seminar-journal)) ([pdf](./seminar-journal/seminar-journal-demo.pdf)) ([screenshot](./seminar-journal/screenshot.png))
-  * Some other documents written with TeXmacs ([dir](./other-examples/)), including a PhD thesis with 217 pages. 
+  * Some other documents written with TeXmacs ([dir](./other-examples/)), including a PhD thesis with 217 pages.
+  * A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides-meyer-cdt)) ([pdf](./slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides-meyer-cdt/screenshot.png))
+  
   
   
 

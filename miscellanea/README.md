@@ -14,3 +14,5 @@ Miscellaneous materials for TeXmacs
   * An "Outline mode" plugin for reorganizing documents in a structure-aware manner  ([dir](./outline))
   * A plugin to move slides around in beamer presentations ([dir](./slidemove))
   * the `post-modern` icon collection ([dir](./post-modern-icons))
+  * A package to produce publication lists sorted by year ([dir](./tm-publist))
+  

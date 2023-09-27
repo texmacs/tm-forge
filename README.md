@@ -18,4 +18,7 @@ TeXmacs'  [blog](https://texmacs.github.io/notes/ ).
 PR are welcome. Please organise the material in an appropriate subdirectory and put a readme file (README.md) with some informations.
 
 
+### Links to external user-contributed content for TeXmacs
 
+#### Plugins
+https://github.com/hammerfunctor/tm-mathematica

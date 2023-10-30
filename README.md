@@ -22,3 +22,6 @@ PR are welcome. Please organise the material in an appropriate subdirectory and 
 
 #### Plugins
 https://github.com/hammerfunctor/tm-mathematica
+
+#### Style files
+https://github.com/JackYansongLi/algorithm2e-texmacs

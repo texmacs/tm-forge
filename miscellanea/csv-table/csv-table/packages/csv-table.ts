@@ -3,7 +3,7 @@
 <style|source>
 
 <\body>
-  <use-module|(csvTable-init)>
+  <use-module|(csv-table-init)>
 
   \;
 

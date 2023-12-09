@@ -3,7 +3,7 @@
 <style|<tuple|tmdoc|pagella-font|SIUnits_v02|old-lengths>>
 
 <\body>
-  <tmdoc-title|the <name|csvTable> package>
+  <tmdoc-title|the <name|csv-table> plugin>
 
   <\traverse>
     <branch|Short description|csvTable-abstract.en.tm>

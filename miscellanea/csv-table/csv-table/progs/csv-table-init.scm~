@@ -1,6 +1,6 @@
-(texmacs-module (csvTable-init))
+(texmacs-module (csv-table-init))
 
-(use-modules (csvTable))
+(use-modules (csv-table))
 
 ;; Mode definitions
 ;; See Scheme developer guide, p. 28
@@ -10,7 +10,7 @@
 
 ;; With this Widget we issue a message to the user when the function is used outside
 ;; the planned environments
-(tm-widget (csvTable-message-widget)
+(tm-widget (csv-table-message-widget)
   (vlist
     (centered
       (text "Please insert table in plain text")
@@ -24,10 +24,14 @@
 
 (kbd-map
   ("t a b l e tab"
-   (top-window csvTable-message-widget "Insert table message")))
+   (top-window csv-table-message-widget "Insert table message")))
 
 (kbd-map
   (:require (and  (or (in-text?) (in-big-table?)) (not (in-table?))))
-  ("t a b l e tab" (choose-file insert-csvTable "choose table file" "")))
+  ("t a b l e tab" (choose-file insert-csv-table "choose table file" "")))
 
-
+(tm-menu (insert-table-menu)
+(former)
+---
+(when  (and  (or (in-text?) (in-big-table?)) (not (in-table?)))
+  ("Insert table from cvs file" (choose-file insert-csv-table "choose table file" ""))))

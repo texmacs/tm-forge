@@ -1,3 +1,5 @@
 # This is a collection of bibliography styles for TeXmacs
 
-These can be added to your TeXmacs installation by copying the SCHEME files (.scm) to your $TEXMACS_HOME_PATH/progs/bibtex/.
+This repository contains a collection of bibliography styles designed for use with TeXmacs. They provide different styles from the standard bibliography styles included with the TeXmacs installation.
+
+Refer to the respective instructions for installation.

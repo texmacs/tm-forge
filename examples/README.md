@@ -19,7 +19,8 @@ Example documents
   * A document for taking searchable notes during talks and seminar with TeXmacs ([dir](./seminar-journal)) ([pdf](./seminar-journal/seminar-journal-demo.pdf)) ([screenshot](./seminar-journal/screenshot.png))
   * Some other documents written with TeXmacs ([dir](./other-examples/)), including a PhD thesis with 217 pages.
   * A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides-meyer-cdt)) ([pdf](./slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides-meyer-cdt/screenshot.png))
-  
+  * A template and example chapter of a book on QFT ([dir](./book_qft/)), including also some interactive sessions.
+   
   
   
 

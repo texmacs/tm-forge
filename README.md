@@ -11,6 +11,7 @@ TeXmacs'  [blog](https://texmacs.github.io/notes/ ).
 
   * [Examples](./examples)
   * [Style files](./styles)
+  * [Bibliography style files](./bibliography-styles)
   * [Miscellanea](./miscellanea)
   
 

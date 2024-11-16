@@ -1,25 +1,34 @@
 # tm-forge/examples
 
-Example documents
+Example documents and templates
 
-*Please organise the material in an appropriate subdirectory in the case it consists on multiple files and put a readme (README.md) with some informations.*
+_Please organise the material in an appropriate subdirectory in the case it consists on multiple files and put a readme (README.md) with some informations._
 
 ### List of documents
-
-  * A large free-style mathematical composition ([tm](./math-diagram-frontisi/math-diagram-frontisi.tm)) ([pdf](./math-diagram-frontisi/math-diagram-frontisi.pdf))
-  * Slides for a mechanics lecture at Ecole polytechnique, using custom style file ([tm](./lecture-slides-audoly/amphi08_tm.tm)) ([pdf](./lecture-slides-audoly/amphi08_tm.pdf))
-  * A couple mechanics papers written using TeXmacs by Basile Audoly ([dir](./papers-audoly/))
-  * Some papers written using TeXmacs by Massimiliano Gubinelli  ([dir](./papers-gubinelli/))
-  * A template for a resume ([dir](./resume-template/))
-  * Anoter template for a CV ([dir](./cv-altmejd/))
-  * And another ([dir](./kjh-vita/))
-  * Slides for a talk ([dir](./slides-gubinelli-eth)) ([pdf](./slides-gubinelli-eth/talk-eth-2020.pdf)) ([screenshot](./slides-gubinelli-eth/screenshot.png))
-  * Slides for a talk on TeXmacs & Guile in Strasbourg in 2019 ([dir](./talk-texmacs-guile)) ([pdf](./talk-texmacs-guile/talk-texmacs-guile-strasbourg-june-2019.pdf)) ([screenshot](./talk-texmacs-guile/screenshot.png))
-  * A template for exercises sheets/tutorials ([dir](./exercises-template)) ([pdf](./exercises-template/exercises-template.pdf)) ([screenshot](./exercises-template/exercises-template.png))
-  * A document for taking searchable notes during talks and seminar with TeXmacs ([dir](./seminar-journal)) ([pdf](./seminar-journal/seminar-journal-demo.pdf)) ([screenshot](./seminar-journal/screenshot.png))
-  * Some other documents written with TeXmacs ([dir](./other-examples/)), including a PhD thesis with 217 pages.
-  * A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides-meyer-cdt)) ([pdf](./slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides-meyer-cdt/screenshot.png))
-  * A template and example chapter of a book on QFT ([dir](./book_qft/)), including also some interactive sessions.
+#### Books
+* A template and example chapter of a book on QFT ([dir](./books/book_qft/)), including also some interactive sessions.
+#### Papers
+* A couple mechanics papers written using TeXmacs by Basile Audoly ([dir](./papers/papers-audoly/))
+* Some papers written using TeXmacs by Massimiliano Gubinelli  ([dir](./papers/papers-gubinelli/))
+#### Slides
+* A large free-style mathematical composition ([tm](.slides/math-diagram-frontisi/math-diagram-frontisi.tm)) ([pdf](./slides/math-diagram-frontisi/math-diagram-frontisi.pdf))
+* Slides for a mechanics lecture at Ecole polytechnique, using custom style file ([tm](./slides/lecture-slides-audoly/amphi08_tm.tm)) ([pdf](./slides/lecture-slides-audoly/amphi08_tm.pdf))
+* A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides/slides-meyer-cdt))
+* Slides for a talk ([dir](./slides/slides-gubinelli-eth)) ([pdf](./slides/slides-gubinelli-eth/talk-eth-2020.pdf)) ([screenshot](./slides/slides-gubinelli-eth/screenshot.png))
+* Slides for a talk on TeXmacs & Guile in Strasbourg in 2019 ([dir](./slides//talk-texmacs-guile)) ([pdf](./slides//talk-texmacs-guile/talk-texmacs-guile-strasbourg-june-2019.pdf)) ([screenshot](./slides//talk-texmacs-guile/screenshot.png))
+#### Theses
+* Some theses written with TeXmacs ([dir](./theses/other-examples/)), including a PhD thesis with 217 pages.
+  ([pdf](./slides/slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides/slides-meyer-cdt/screenshot.png))
+#### Resumes
+* A template for a resume ([dir](./resumes/resume-template/))
+* Another template for a CV ([dir](./resumes/cv-altmejd/))
+* And another ([dir](.resumes/kjh-vita/))
+#### Other documents
+* A template for exercises sheets/tutorials ([dir](./other-examples/exercises-template)) ([pdf](./other-examples/exercises-template/exercises-template.pdf)) ([screenshot](./other-examples/exercises-template/exercises-template.png))
+* A document for taking searchable notes during talks and seminar with TeXmacs ([dir](.other-examples/seminar-journal)) ([pdf](./other-examples/seminar-journal/seminar-journal-demo.pdf)) ([screenshot](./other-examples/seminar-journal/screenshot.png))
+ 
+ 
+  
    
   
   

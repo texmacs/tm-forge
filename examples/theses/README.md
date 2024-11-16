@@ -1,6 +1,6 @@
-# tm-forge/examples/other-examples
+# tm-forge/examples/theses
 
-Some (other) examples of TeXmacs documents
+Some examples of theses written with TeXmacs
 
 - The PhD thesis of Nikolay Barashkov (University of Bonn, 2022) ([pdf](./phd-thesis-barashkov-example.pdf))
 - The PhD thesis of Lucio Galeati (University of Bonn, 2022) ([pdf](./phd-thesis-galeati-example.pdf))

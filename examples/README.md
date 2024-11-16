@@ -13,12 +13,11 @@ _Please organise the material in an appropriate subdirectory in the case it cons
 #### Slides
 * A large free-style mathematical composition ([tm](./slides/math-diagram-frontisi/math-diagram-frontisi.tm)) ([pdf](./slides/math-diagram-frontisi/math-diagram-frontisi.pdf))
 * Slides for a mechanics lecture at Ecole polytechnique, using custom style file ([tm](./slides/lecture-slides-audoly/amphi08_tm.tm)) ([pdf](./slides/lecture-slides-audoly/amphi08_tm.pdf))
-* A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides/slides-meyer-cdt))
+* A presentation using the [metropolis](../styles/beamer/metropolis) beamer style ([dir](./slides/slides-meyer-cdt)) ([pdf](./slides/slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides/slides-meyer-cdt/screenshot.png))
 * Slides for a talk ([dir](./slides/slides-gubinelli-eth)) ([pdf](./slides/slides-gubinelli-eth/talk-eth-2020.pdf)) ([screenshot](./slides/slides-gubinelli-eth/screenshot.png))
 * Slides for a talk on TeXmacs & Guile in Strasbourg in 2019 ([dir](./slides//talk-texmacs-guile)) ([pdf](./slides/talk-texmacs-guile/talk-texmacs-guile-strasbourg-june-2019.pdf)) ([screenshot](./slides//talk-texmacs-guile/screenshot.png))
 #### Theses
-* Some theses written with TeXmacs ([dir](./theses/other-examples/)), including a PhD thesis with 217 pages.
-  ([pdf](./slides/slides-meyer-cdt/example-slides-meyer-cdt.pdf)) ([screenshot](./slides/slides-meyer-cdt/screenshot.png))
+* Some theses written with TeXmacs ([dir](./theses/))
 #### Resumes
 * A template for a resume ([dir](./resumes/resume-template/))
 * Another template for a CV ([dir](./resumes/cv-altmejd/))

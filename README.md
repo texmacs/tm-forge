@@ -25,7 +25,7 @@ These links point outside the TeXmacs GitHub repository so please contact each s
 
 #### Plugins
   * Mathematica: https://github.com/hammerfunctor/tm-mathematica
-  * OctaveX, an alternative plugin for Octave: https://github.com/AFMiJ/TeXmacs-related/releases (see http://forum.texmacs.cn/t/issues-with-the-octave-plugin-symbolic-pkg-not-working-properly/1774/19 for a description of this plugin)
+  * OctaveX, an alternative plugin for Octave: [https://github.com/lorenz-beam/TeXmacs-related/releases/latest](https://github.com/lorenz-beam/TeXmacs-related/releases/latest) (see http://forum.texmacs.cn/t/issues-with-the-octave-plugin-symbolic-pkg-not-working-properly/1774/19 for a description of this plugin)
 
 #### Style files
 https://github.com/JackYansongLi/algorithm2e-texmacs

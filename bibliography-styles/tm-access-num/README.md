@@ -10,7 +10,7 @@ This is a bibliography style based on the elsart-num style by David Michel and J
   - If the field does not exist in the bibtex, then it is assumed to be closed access
   - In bibtex, it is set with `openaccess = {true},` or `openaccess = {false},`respectively
  
-The icons used were created by Julius Guthunz and are in the public domain. They are optimized for approximately 300dpi on the default text size.
+The icons used were modified from [here](https://commons.wikimedia.org/wiki/Category:Open_Access_Icons_for_Open_Access_Office_Brandenburg) and are in the public domain. They are optimized for approximately 300dpi on the default text size.
 
 ## Example
 The following is a screenshot showcasing a bibliography using this style.

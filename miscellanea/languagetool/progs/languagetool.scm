@@ -237,11 +237,9 @@
   ;
   ;  the code for descending the tree branches is derived from (selection-subtrees t p1 p2) in version-edit.scm
 
- ;(display* "tree2stree* " p1 " " p2 " label "  (tree-label t)  " atom? " (tree-atomic? t) " ri " (tree-right-index t) " ar "(tree-arity t)"\n") ; t "\n")
+ ;(display* "tree2stree* " p1 " " p2 " label "  (tree-label t)  " atom? " (tree-atomic? t) " ri " (tree-right-index t) " ar "(tree-arity t)"\n" t "\n")
   (with tl (tree-label t) 
   (cond 
-    ;((or (null? p1) (null? p2)) (display* "case  (or (null? p1) (null? p2))" "\n") 
-       ; '())
     ((== tl 'string)   
         (let* ((i1 (if (null? p1) 0 (car p1)))
                (i2 (if (null? p2) (tree-right-index t) (car p2)))
@@ -256,14 +254,14 @@
           )
           ;(display* "string " s "\n " p "\n" ret "\n")
           ret))
+    ((or (null? p1) (null? p2)) ;(display* "case  (or (null? p1) (null? p2))" "\n") 
+        '())
     ((== tl 'with) (tree2stree* (tree-ref t :last) (cdr p1) (cdr p2))) ;ignore attributes set by with
     ((== tl 'hlink) (with x (tree-ref t 0) (tree2stree* x (list 0) (list (tree-right-index x))))) ;only visible text , not link
     ((and (== tl 'specific) (!= (tree->string (tree-ref t 0)) "texmacs")) '())
            ;((in? tl '(cite math ...) makes no sense to check the content but can't simply ignore/suppress otherwise we have a lot of "double space" typography error; cite is post-filtered according to accessibility, and matches in math mode are ignored
     ((in? tl '(bib-list explain-macro session include image label graphics sound
                       video equation* equation eqnarray eqnarray* align align*)) '()) ;ignore completely
-    ((or (null? p1) (null? p2)) ;(display* "case  (or (null? p1) (null? p2))" "\n") 
-        '())
     ((and (== p1 (list 0)) (== p2 (list (tree-right-index t)))) ;(display* "case  (and (== p1 (list 0)) (== p2 (list (tree-right-index t)))) \n")
         (tree2stree* t (list 0 0) p2))
     ((tree-atomic? t)   ;(display* "atomic "  "\n")
@@ -276,7 +274,7 @@
         (tree2stree* t (list 0 0) p2))
     ((== p2 (list (tree-right-index t))) ;(display* "case (== p2 (list (tree-right-index t))) \n")
         (with c (append-nnull (map (lambda (x) (tree2stree* x (list 0) (list (tree-right-index x))))  (tree-children t) ))
-           (if (list>0? c ) (cons tl c) '()))
+           (cons tl c))
           )
     ((== (car p1) (car p2)) ;(display* "case (== (car p1) (car p2)) \n")
         (tree2stree* (tree-ref t (car p1)) (cdr p1) (cdr p2)))
@@ -316,7 +314,8 @@
          (mu (car y))
          ;(toto (display* "# " mu "\n"))
          (txt (cAr y))
-         (outmu (cond 
+         (outmu (cond
+                  ((== mu "nbsp/") "<nbsp>"); non-breaking space
                   ((== mu "/tm-par") "</tm-par>");paragraph break (actual)
                   ; to avoid unwanted string concatenations, we insert some fake fake paragraph breaks :
                   ((string-starts? mu "/author-")  "</tm-par>") ; fake paragraph break
@@ -356,7 +355,9 @@
          (mu (car y))
          (txt (cAr y))
          (outt (if (== txt "") #f (string-append "{\"text\": \""  (string-replace txt "\"" "\\\"")  "\"}") ))
-         (outmu (cond ((== mu "") #f) 
+         (outmu (cond ((== mu "") #f)
+                  ((== mu "nbsp") 
+                       (string-append "{\"markup\": \"<" mu ">\" ,\"interpretAs\": \" \"}"))
                   ((== mu "/tm-par") 
                        (string-append "{\"markup\": \"<" mu ">\" ,\"interpretAs\": \"\\n\\n\"}"))
                   ((string-starts? mu "path=")

@@ -29,3 +29,13 @@ These links point outside the TeXmacs GitHub repository so please contact each s
 
 #### Style files
 https://github.com/JackYansongLi/algorithm2e-texmacs
+
+### Where to install user-contributed TeXmacs software
+
+TeXmacs will recognize user-contributed software when it is present in the personal TeXmacs initialization folder. You can find the location of the personal initialization folder in your system by opening a Scheme session (from the menu Insert -> Session -> Scheme) and executing the command `(get-texmacs-home-path)`. Subdirectories of the TeXmacs folder collect different software categories:
+   * **`styles`** for style files
+   * **`packages`** for macros which are not intended as style files
+   * **`progs`** for Scheme programs (which may be used as support for packages)
+     * the **`bibtex`** subdirectory of `progs` collects bibliography files 
+   * **`plugins`** for cohesive combinations of software that work as a unit
+

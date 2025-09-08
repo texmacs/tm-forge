@@ -9,5 +9,6 @@ Style files and packages
   * A simplistic clone of the Beamer Metropolis theme ([dir](./beamer/metropolis))
   * ....
 
+## How to install a style
 
-
+A style can be installed by copying the style file (extension `.ts`) into the `styles` directory, or into any of its subdirectories, of the personal TeXmacs initialization folder.

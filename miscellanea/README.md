@@ -16,4 +16,4 @@ Miscellaneous materials for TeXmacs
   * A plugin for correcting spelling, grammar and typography errors in TeXmacs documents using LanguageTool ([dir](./languagetool))
   * the `post-modern` icon collection ([dir](./post-modern-icons))
   * A package to produce publication lists sorted by year ([dir](./tm-publist))
-  
+  * A scheme module to (partially) implement Emacs' `cl-letf`. To use it, just place the `hacks` dir in your `TEXMACS_HOME_PATH/progs` and open the included doc `cl-letf-test.tm` ([dir](./hacks))

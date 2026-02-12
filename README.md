@@ -26,6 +26,7 @@ These links point outside the TeXmacs GitHub repository so please contact each s
 #### Plugins
   * Mathematica: https://github.com/hammerfunctor/tm-mathematica
   * OctaveX, an alternative plugin for Octave: https://github.com/AFMiJ/TeXmacs-related/releases (see http://forum.texmacs.cn/t/issues-with-the-octave-plugin-symbolic-pkg-not-working-properly/1774/19 for a description of this plugin)
+  * Zotexmacs a plugin that eases referencing articles in TeXmacs when your bibliographic database is handled by Zotero : https://github.com/slowphil/zotexmacs
 
 #### Style files
 https://github.com/JackYansongLi/algorithm2e-texmacs

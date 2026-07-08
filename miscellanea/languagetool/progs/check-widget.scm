@@ -2,7 +2,7 @@
 ;;
 ;; MODULE      : check-widgets.scm
 ;; DESCRIPTION : widgets for LanguageTool
-;; COPYRIGHT   : (C) 2025 P. Joyez
+;; COPYRIGHT   : (C) 2026 P. Joyez
 ;;
 ;; This software falls under the GNU general public license version 3 or later.
 ;; It comes WITHOUT ANY WARRANTY WHATSOEVER. For details, see the file LICENSE
@@ -157,7 +157,7 @@
            (ihash (car issue))
            (itype (utf8->cork (caddr issue)))
            (itype (string-append "Possible " (if (== itype "uncategorized") "miscellaneous" itype) " issue"))
-           (idesc `(document (strong ,itype) ,(utf8->cork (cadddr issue))))
+           (idesc `(document (strong ,itype) ,(utf8->cork** (cadddr issue))))
            (void (set! dup-list (duplicated-issue ihash sel)))
            (ndups (length dup-list))
            (aux (spell-buffer))
@@ -362,6 +362,14 @@
         (else
           (when (and (>= i 0) (< i (length spell-suggestions)))
             (spell-replace-by* (list-ref spell-suggestions i))))))
+            
+(define (check-insert-word)
+  (and-with sel check-current-selection
+    (and-with ss (selection->string sel)
+      (with lan LTdetectedLanguage
+        (set! spell-inserted (+ spell-inserted 1))
+        (spell-insert lan ss)
+        (spell-keep-word*)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Customized keyboard shortcuts in spell mode
@@ -382,7 +390,7 @@
         ((== key "pageup") (spell-next-match #f))
         ((== key "pagedown") (spell-next-match #t))
         ((== key "escape") (toolbar-spell-end))
-        ;((== key "+") (spell-insert-word)) ; not implemented yet
+        ((== key "+") (check-insert-word)) ; not implemented yet
         (else (former key time))))
 
 (tm-define (kbd-enter t shift?)
@@ -464,8 +472,8 @@
     ((balloon (icon "tm_replace_all.xpm") "Accept this and any future occurrence")
        (spell-keep-word*))
       
-    ;((balloon (icon "tm_add.xpm") "Permanently add to dictionary")
-    ; (spell-insert-word)) ; not yet implemented
+    ((balloon (icon "tm_add.xpm") "Permanently add to dictionary")
+     (check-insert-word)) ; not yet implemented
     ///
           ((balloon (icon "tm_search_first.xpm") "First error")
            (spell-extreme-match #f))
@@ -556,8 +564,6 @@
 (define (set-spell-region-sub)
   (let* ((start (selection-get-start*))
         (end (selection-get-end*))
-        (end (if (tree-is? (path->tree end) 'string) end (path-next (root-tree) end)))
-        (end (if (list-starts? (cDr end) (buffer-path)) end (selection-get-end*))) 
         (void (display* "spell-region " (list start end)"\n")))
   (set-alt-selection "spell-region" (list start end))
   (set! spell-language (tree->string (get-env-tree-at "language" start))))
@@ -580,7 +586,7 @@
   (display* "interactive-check: ")
   (filtered-check-LT) 
   (display* (length LTissues) " problems after filtering:\n")
-  (map (lambda (x) (display* x "\n")) LTissues)
+  ;(map (lambda (x) (display* x "\n")) LTissues)
   (if (null? LTissues)
       (delayed
         (:idle 100)

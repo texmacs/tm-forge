@@ -10,14 +10,11 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; LanguageTool (LT) has provision to skip part of its input marked as "markup"
-;; which make it easy to feed it texmacs content serialized to html or xml (aka
-;; tmml).
-;; 
-;; However we need to be able to precisely locate the error found by LT in the
-;; original document. For this we hack on the tmml generation in order to embed
-;; the texmacs paths of the strings in the tmml content, so that we can recom-
-;; pute the paths of the errors and treat them in texmacs.    
+;; We need to be able to precisely locate the error found by LanguageTool (LT)
+;; in the original document, so that we can display them in TeXmacs. For this
+;; we use the ability of LT to skip “markup” parts of the input we feed it, and
+;; we use this markup to embed the texmacs paths of the serialized strings we
+;; pass to LT for analysis.  
 ;; 
 ;; This module does the interfacing with LanguageTool, entirely in scheme.
 ;; It is meant to be used with check-widget.scm, that takes care of the 
@@ -25,11 +22,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-(texmacs-module (languagetool)
-  (:use (convert tmml tmtmml)
-        (convert tmml tmmlout)
-        (convert tmml tmmltm)
-        ))
+(texmacs-module (languagetool))
 
 ;;;; various utilities functions
 
@@ -150,7 +143,7 @@
              ))))))))
 
 (define (cork->utf8* s)
-  ; convert tm-universal <XXX> symbols that (1) will not break xml-style tags and (2) are exactly reversible through utf8->cork,  otherwise keep tm tag
+  ; convert to utf-8 tm-universal <XXX> symbols that (1) will not break xml-style tags and (2) are exactly reversible through utf8->cork,  otherwise keep tm tag
   (with l (string-length s)
     (let loop ((i 0)
               (ret ""))
@@ -258,11 +251,8 @@
         (t1 (tree-ref t i1))
         (sep (if (in? tl '(document author-data doc-data)) "</tm-par>" ""))
         (t2 (tree-ref t i2))
-        ;(void (display* "=========l1\n"))
         (l1 (tree2string t p1 (list i1 (tree-right-index t1))))
-        ;(void (display* "=========l2\n"))
         (l2 (tree2string t (list i2 0) p2))
-        ;(void (display* "=========ll\n"))
         (fun (lambda (x) (tree2string x '(0) (list (tree-right-index x)))))
         (ll (map fun (sublist (tree-children t) (+ i1 1) i2)))
         )
@@ -272,12 +262,12 @@
   ))
 )
 
-(define (tmml->JSON w)
+(define (toJSON w)
   ;making the "annotatedText" LT wants, in JSON format
-  ;all tags kept in simplifytmml are used for annotating : strings (for knowing paths) , cork symbols (eg <less>) and </tm-par>, marked as paragraph ending
-  (string-append "{\"annotation\":[\n"  (string-drop-right (apply string-append (map tmml->JSON-aux (string-split w #\<)) ) 2 ) "\n]}"))
+  ;all tags are used for annotating : paths, cork symbols (eg <less>) and </tm-par>, marked as paragraph ending
+  (string-append "{\"annotation\":[\n"  (string-drop-right (apply string-append (map toJSON-aux (string-split w #\<)) ) 2 ) "\n]}"))
   
-(define (tmml->JSON-aux x)
+(define (toJSON-aux x)
   (let* ((y (string-split x #\>))
          (mu (car y))
          (txt (cAr y))
@@ -516,7 +506,7 @@
   (if (nnull? opt) (set! spell-language (car opt)))
   (let* ((pathtext (spell-reg->pathtext)) ; this is the string LT works on and wrt to which it indexes errors
          ;(void (display*  "\n++++\n" pathtext "\n----\n"))
-         (json (tmml->JSON pathtext)) ; make json input for LT
+         (json (toJSON pathtext)) ; make json input for LT
          ;(void (display* json "\n"))
          (LTreply (invoke-LT json))
          ;(void (display* "\n++++\n" LTreply "\n"))

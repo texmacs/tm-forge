@@ -7,6 +7,7 @@ Style files and packages
 ### List of styles
 
   * A simplistic clone of the Beamer Metropolis theme ([dir](./beamer/metropolis))
+  * My Notes, a package for colorful semantic note blocks and personal insertion commands ([dir](./notes/my-notes))
   * ....
 
 ## How to install a style
